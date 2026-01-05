@@ -7,16 +7,16 @@ import { motion } from "framer-motion";
 
 export default function MeetTheFounder() {
     return (
-        <section className="py-24 bg-white">
+        <section className="py-24 bg-accent">
             <div className="container mx-auto px-4">
                 {/* Header */}
                 <ScrollReveal>
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-primary font-bold tracking-widest uppercase text-sm mb-3">
+                        <span className="text-primary font-bold tracking-widest uppercase text-sm mb-3 block">
                             The Visionary Behind Chetram
-                        </h2>
-                        <h3 className="text-4xl md:text-5xl font-serif font-bold text-text-dark mb-6">
-                            Meet the Founder
+                        </span>
+                        <h3 className="text-4xl md:text-5xl font-bold text-text-dark mb-6">
+                            Meet the <span className="text-primary">Founder</span>
                         </h3>
                         <div className="h-1 w-24 bg-primary rounded-full mx-auto" />
                     </div>
@@ -29,9 +29,9 @@ export default function MeetTheFounder() {
                         <ScrollReveal direction="left" className="lg:col-span-2">
                             <div className="relative">
                                 {/* Main Image */}
-                                <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+                                <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl border-4 border-primary/50">
                                     <Image
-                                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop"
+                                        src="https://github.com/AkchhatAwasthi/chetramimages/blob/main/WhatsApp%20Image%202026-01-05%20at%2011.45.41%20PM.jpeg?raw=true"
                                         alt="Founder Portrait"
                                         fill
                                         className="object-cover"
@@ -40,20 +40,20 @@ export default function MeetTheFounder() {
                                 </div>
 
                                 {/* Decorative Element */}
-                                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 rounded-2xl -z-10" />
-                                <div className="absolute -top-6 -left-6 w-32 h-32 bg-accent/10 rounded-2xl -z-10" />
+                                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/20 rounded-2xl -z-10" />
+                                <div className="absolute -top-6 -left-6 w-32 h-32 bg-white/30 rounded-2xl -z-10" />
                             </div>
                         </ScrollReveal>
 
                         {/* Founder Story */}
                         <ScrollReveal direction="right" delay={0.2} className="lg:col-span-3">
-                            <div className="space-y-6">
+                            <div className="space-y-6 bg-white p-8 rounded-2xl shadow-lg">
                                 {/* Quote Icon */}
-                                <Quote size={48} className="text-primary/20" />
+                                <Quote size={48} className="text-primary/30" />
 
                                 {/* Name & Title */}
                                 <div>
-                                    <h4 className="text-3xl font-serif font-bold text-text-dark mb-2">
+                                    <h4 className="text-3xl font-bold text-text-dark mb-2">
                                         Rajesh Kumar Sharma
                                     </h4>
                                     <p className="text-primary font-semibold text-lg">
@@ -83,11 +83,11 @@ export default function MeetTheFounder() {
                                     whileInView={{ opacity: 1 }}
                                     viewport={{ once: false }}
                                     transition={{ delay: 0.5 }}
-                                    className="pt-6 border-t border-neutral-200"
+                                    className="pt-6 border-t border-accent"
                                 >
                                     <div className="flex items-center gap-4">
                                         <div className="text-4xl font-serif italic text-primary">
-                                            Rajesh Kumar
+                                            Punit Kumar Agarwal
                                         </div>
                                     </div>
                                 </motion.div>
@@ -98,15 +98,15 @@ export default function MeetTheFounder() {
                     {/* Additional Info Cards */}
                     <ScrollReveal delay={0.4}>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
-                            <div className="bg-neutral-cream/50 p-6 rounded-xl text-center border border-neutral-100">
+                            <div className="bg-white p-6 rounded-xl text-center border border-primary/20 shadow-md">
                                 <div className="text-3xl font-bold text-primary mb-2">2010</div>
                                 <div className="text-sm text-text-muted">Journey Started</div>
                             </div>
-                            <div className="bg-neutral-cream/50 p-6 rounded-xl text-center border border-neutral-100">
+                            <div className="bg-white p-6 rounded-xl text-center border border-primary/20 shadow-md">
                                 <div className="text-3xl font-bold text-primary mb-2">Delhi → Lucknow</div>
                                 <div className="text-sm text-text-muted">Bringing Authentic Flavors</div>
                             </div>
-                            <div className="bg-neutral-cream/50 p-6 rounded-xl text-center border border-neutral-100">
+                            <div className="bg-white p-6 rounded-xl text-center border border-primary/20 shadow-md">
                                 <div className="text-3xl font-bold text-primary mb-2">Family First</div>
                                 <div className="text-sm text-text-muted">Our Core Philosophy</div>
                             </div>

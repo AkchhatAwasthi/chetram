@@ -7,96 +7,422 @@ import clsx from "clsx";
 
 const categories = [
     "All Items",
-    "Chole Bhature",
+    "Breakfast",
     "Chur Chur Naan",
-    "Kulchas",
+    "Chur Chur Kulche",
+    "Breads",
+    "Rice",
+    "Thali",
     "Sides & Dal",
     "Beverages",
     "Desserts",
 ];
 
 const menuItems = [
+    // ================= BREAKFAST =================
     {
         id: "1",
-        name: "Classic Pindi Chole Bhature",
-        description: "2 fluffly bhaturas served with spicy pindi chole, pickle and onion salad.",
-        price: 160,
+        name: "Chole Bhature",
+        description: "Soft fluffy bhature served with spicy, slow-cooked chole and traditional accompaniments.",
+        category: "Breakfast",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1626074353765-5bf1d4b03475?q=80&w=800&auto=format&fit=crop",
         rating: 4.8,
-        category: "Chole Bhature",
-        image: "https://images.unsplash.com/photo-1626132647523-66f5bf380027?q=80&w=2070&auto=format&fit=crop",
-        isVeg: true,
     },
     {
         id: "2",
-        name: "Paneer Bhature",
-        description: "Bhaturas stuffed with spicy paneer filling, served with chole.",
-        price: 190,
+        name: "Aalu Paratha with Aalu Sabji & Raita",
+        description: "Potato-stuffed paratha cooked on tawa, served with aalu sabji and cooling raita.",
+        category: "Breakfast",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1626500125627-c1d471520111?q=80&w=800&auto=format&fit=crop",
         rating: 4.7,
-        category: "Chole Bhature",
-        image: "https://images.unsplash.com/photo-1626132647523-66f5bf380027?q=80&w=2070&auto=format&fit=crop",
-        isVeg: true,
     },
     {
         id: "3",
-        name: "Aloo Chur Chur Naan Thali",
-        description: "Crispy aloo stuffed naan served with Dal Makhani, Paneer, and Raita.",
-        price: 240,
+        name: "Paneer Paratha with Aalu Sabji & Raita",
+        description: "Paratha stuffed with seasoned paneer, paired with aalu sabji and fresh raita.",
+        category: "Breakfast",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1626500125627-c1d471520111?q=80&w=800&auto=format&fit=crop",
         rating: 4.9,
-        category: "Chur Chur Naan",
-        image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=2070&auto=format&fit=crop",
-        isVeg: true,
     },
     {
         id: "4",
-        name: "Paneer Chur Chur Naan Thali",
-        description: "Rich paneer stuffed naan served with premium sides.",
-        price: 260,
-        rating: 4.9,
-        category: "Chur Chur Naan",
-        image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=2070&auto=format&fit=crop",
-        isVeg: true,
+        name: "Gobhi Paratha with Aalu Sabji & Raita",
+        description: "Traditional gobhi paratha served hot with aalu sabji and raita.",
+        category: "Breakfast",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1626500125627-c1d471520111?q=80&w=800&auto=format&fit=crop",
+        rating: 4.6,
     },
     {
         id: "5",
-        name: "Mix Kulcha",
-        description: "Kulcha stuffed with mix vegetables and paneer.",
-        price: 120,
+        name: "Plain Tawa Paratha with Aalu Sabji & Raita",
+        description: "Crispy plain paratha cooked on tawa, served with mildly spiced aalu sabji and raita.",
+        category: "Breakfast",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1644365313361-b5fe93b70855?q=80&w=800&auto=format&fit=crop",
         rating: 4.5,
-        category: "Kulchas",
-        image: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?q=80&w=1921&auto=format&fit=crop",
-        isVeg: true,
     },
+
+    // ================= CHUR CHUR KULCHE =================
     {
         id: "6",
-        name: "Dal Makhani (Full)",
-        description: "Creamy black lentils cooked overnight.",
-        price: 280,
-        rating: 4.7,
-        category: "Sides & Dal",
-        image: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?q=80&w=2070&auto=format&fit=crop",
-        isVeg: true,
+        name: "Aalu Chur Chur Kulche",
+        description: "Crispy layered kulche stuffed with spiced aloo, served with classic North Indian flavors.",
+        category: "Chur Chur Kulche",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=800&auto=format&fit=crop",
+        rating: 4.8,
     },
     {
         id: "7",
-        name: "Sweet Lassi",
-        description: "Thick creamy yogurt drink topped with malai.",
-        price: 80,
-        rating: 4.8,
-        category: "Beverages",
-        image: "https://images.unsplash.com/photo-1626074353765-517a681e40be?q=80&w=1887&auto=format&fit=crop",
-        isVeg: true,
+        name: "Aalu Pyaz Chur Chur Kulche",
+        description: "Crunchy kulche filled with aloo and onion stuffing for a bold desi taste.",
+        category: "Chur Chur Kulche",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=800&auto=format&fit=crop",
+        rating: 4.9,
     },
     {
         id: "8",
-        name: "Gulab Jamun (2 pcs)",
-        description: "Hot khoya gulab jamuns.",
-        price: 60,
+        name: "Paneer Chur Chur Kulche",
+        description: "Flaky chur chur kulche generously stuffed with seasoned paneer.",
+        category: "Chur Chur Kulche",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=800&auto=format&fit=crop",
+        rating: 5.0,
+    },
+    {
+        id: "9",
+        name: "Paneer Pyaz Chur Chur Kulche",
+        description: "Paneer and onion stuffed kulche with a crispy layered texture.",
+        category: "Chur Chur Kulche",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=800&auto=format&fit=crop",
+        rating: 4.9,
+    },
+    {
+        id: "10",
+        name: "Gobhi Chur Chur Kulche",
+        description: "Crispy kulche stuffed with spiced gobhi filling.",
+        category: "Chur Chur Kulche",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=800&auto=format&fit=crop",
+        rating: 4.7,
+    },
+    {
+        id: "11",
+        name: "Gobhi Pyaz Chur Chur Kulche",
+        description: "Gobhi and onion filled chur chur kulche with authentic Punjabi flavors.",
+        category: "Chur Chur Kulche",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=800&auto=format&fit=crop",
+        rating: 4.8,
+    },
+
+    // ================= CHUR CHUR NAAN =================
+    {
+        id: "12",
+        name: "Aalu Chur Chur Naan",
+        description: "Crispy layered naan stuffed with spiced aloo, rich and filling.",
+        category: "Chur Chur Naan",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1517244683847-7456b63c5969?q=80&w=800&auto=format&fit=crop",
+        rating: 4.9,
+    },
+    {
+        id: "13",
+        name: "Aalu Pyaz Chur Chur Naan",
+        description: "Crunchy chur chur naan with aloo and onion stuffing.",
+        category: "Chur Chur Naan",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1517244683847-7456b63c5969?q=80&w=800&auto=format&fit=crop",
+        rating: 4.8,
+    },
+    {
+        id: "14",
+        name: "Paneer Chur Chur Naan",
+        description: "Paneer-filled chur chur naan with a crispy texture and rich taste.",
+        category: "Chur Chur Naan",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1517244683847-7456b63c5969?q=80&w=800&auto=format&fit=crop",
+        rating: 5.0,
+    },
+    {
+        id: "15",
+        name: "Paneer Pyaz Chur Chur Naan",
+        description: "Layered naan stuffed with paneer and onions, full of flavor.",
+        category: "Chur Chur Naan",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1517244683847-7456b63c5969?q=80&w=800&auto=format&fit=crop",
+        rating: 4.9,
+    },
+    {
+        id: "16",
+        name: "Mix Chur Chur Naan",
+        description: "Chur chur naan stuffed with a mix of vegetables and paneer.",
+        category: "Chur Chur Naan",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1517244683847-7456b63c5969?q=80&w=800&auto=format&fit=crop",
+        rating: 4.9,
+    },
+    {
+        id: "17",
+        name: "Gobhi Chur Chur Naan",
+        description: "Crispy naan filled with spiced gobhi stuffing.",
+        category: "Chur Chur Naan",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1517244683847-7456b63c5969?q=80&w=800&auto=format&fit=crop",
+        rating: 4.7,
+    },
+
+    // ================= BREADS =================
+    {
+        id: "18",
+        name: "Tawa Roti",
+        description: "Soft whole wheat roti cooked fresh on tawa.",
+        category: "Breads",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=800&auto=format&fit=crop",
+        rating: 4.5,
+    },
+    {
+        id: "19",
+        name: "Tawa Butter Roti",
+        description: "Tawa roti topped with melted butter for extra richness.",
+        category: "Breads",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=800&auto=format&fit=crop",
         rating: 4.6,
+    },
+    {
+        id: "20",
+        name: "Tandoori Roti",
+        description: "Classic tandoor-baked roti with a smoky flavor.",
+        category: "Breads",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=800&auto=format&fit=crop",
+        rating: 4.7,
+    },
+    {
+        id: "21",
+        name: "Tandoori Butter Roti",
+        description: "Tandoori roti brushed with butter for enhanced taste.",
+        category: "Breads",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=800&auto=format&fit=crop",
+        rating: 4.8,
+    },
+    {
+        id: "22",
+        name: "Chur Chur Naan (Aalu / Paneer / Mix / Gobhi)",
+        description: "Crispy layered naan available with multiple stuffing options.",
+        category: "Breads",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1517244683847-7456b63c5969?q=80&w=800&auto=format&fit=crop",
+        rating: 4.9,
+    },
+    {
+        id: "23",
+        name: "Kulche (Aalu / Paneer / Mix / Gobhi)",
+        description: "Soft kulche with your choice of traditional stuffing.",
+        category: "Breads",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=800&auto=format&fit=crop",
+        rating: 4.8,
+    },
+    {
+        id: "24",
+        name: "Plain Tawa Paratha",
+        description: "Simple, flaky paratha cooked golden on tawa.",
+        category: "Breads",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1644365313361-b5fe93b70855?q=80&w=800&auto=format&fit=crop",
+        rating: 4.6,
+    },
+    {
+        id: "25",
+        name: "Missi Roti",
+        description: "Gram flour roti seasoned with spices and herbs.",
+        category: "Breads",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=800&auto=format&fit=crop",
+        rating: 4.7,
+    },
+    {
+        id: "26",
+        name: "Laccha Paratha",
+        description: "Multi-layered flaky paratha cooked crisp.",
+        category: "Breads",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1644365313361-b5fe93b70855?q=80&w=800&auto=format&fit=crop",
+        rating: 4.8,
+    },
+
+    // ================= RICE =================
+    {
+        id: "27",
+        name: "Plain Rice",
+        description: "Steamed basmati rice, light and fluffy.",
+        category: "Rice",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=800&auto=format&fit=crop",
+        rating: 4.5,
+    },
+    {
+        id: "28",
+        name: "Jeera Rice",
+        description: "Basmati rice tempered with cumin seeds for aroma.",
+        category: "Rice",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=800&auto=format&fit=crop",
+        rating: 4.7,
+    },
+
+    // ================= THALI =================
+    {
+        id: "29",
+        name: "Veg Thali",
+        description: "Balanced thali with sabji, dal, roti, rice, raita, and salad.",
+        category: "Thali",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1546833999-b9f58161d966?q=80&w=800&auto=format&fit=crop",
+        rating: 4.9,
+    },
+    {
+        id: "30",
+        name: "Chetram Special Delux Thali",
+        description: "Premium thali featuring paneer, dal makhani, breads, rice, and dessert.",
+        category: "Thali",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1546833999-b9f58161d966?q=80&w=800&auto=format&fit=crop",
+        rating: 5.0,
+    },
+
+    // ================= SIDES & DAL (Formerly Party Packing) =================
+    {
+        id: "31",
+        name: "Chola",
+        description: "Slow-cooked chickpea curry with rich spices.",
+        category: "Sides & Dal",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1585937421612-70a008356f36?q=80&w=800&auto=format&fit=crop",
+        rating: 4.8,
+    },
+    {
+        id: "32",
+        name: "Shahi Paneer / Palak Paneer",
+        description: "Creamy shahi paneer or healthy palak paneer for special occasions.",
+        category: "Sides & Dal",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1585937421612-70a008356f36?q=80&w=800&auto=format&fit=crop",
+        rating: 4.9,
+    },
+    {
+        id: "33",
+        name: "Dal Makhani",
+        description: "Creamy black lentils cooked overnight with butter.",
+        category: "Sides & Dal",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1585937421612-70a008356f36?q=80&w=800&auto=format&fit=crop",
+        rating: 5.0,
+    },
+    {
+        id: "34",
+        name: "Rajma / Kadhi",
+        description: "Classic rajma curry or comforting Punjabi kadhi.",
+        category: "Sides & Dal",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1585937421612-70a008356f36?q=80&w=800&auto=format&fit=crop",
+        rating: 4.8,
+    },
+    {
+        id: "35",
+        name: "Arhar Dal",
+        description: "Simple and nutritious arhar dal tempered with spices.",
+        category: "Sides & Dal",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1585937421612-70a008356f36?q=80&w=800&auto=format&fit=crop",
+        rating: 4.7,
+    },
+    {
+        id: "36",
+        name: "Baigan Bharta",
+        description: "Roasted baigan mashed with spices and cooked traditionally.",
+        category: "Sides & Dal",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1585937421612-70a008356f36?q=80&w=800&auto=format&fit=crop",
+        rating: 4.6,
+    },
+    {
+        id: "37",
+        name: "Aalu Jeera",
+        description: "Lightly spiced potatoes tossed with cumin seeds.",
+        category: "Sides & Dal",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1585937421612-70a008356f36?q=80&w=800&auto=format&fit=crop",
+        rating: 4.5,
+    },
+    {
+        id: "38",
+        name: "Aalu Tamatar Sabji",
+        description: "Homestyle potato curry cooked in tangy tomato gravy.",
+        category: "Sides & Dal",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1585937421612-70a008356f36?q=80&w=800&auto=format&fit=crop",
+        rating: 4.6,
+    },
+    {
+        id: "39",
+        name: "Raita (150gm)",
+        description: "Fresh curd seasoned with spices for a cooling side.",
+        category: "Sides & Dal",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1585937421612-70a008356f36?q=80&w=800&auto=format&fit=crop",
+        rating: 4.7,
+    },
+
+    // ================= BEVERAGES & DESSERTS =================
+    {
+        id: "40",
+        name: "Mast Mattha",
+        description: "Refreshing spiced buttermilk served chilled.",
+        category: "Beverages",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=800&auto=format&fit=crop",
+        rating: 4.9,
+    },
+    {
+        id: "41",
+        name: "Chulbuli Lassi",
+        description: "Thick, creamy sweet lassi with a smooth finish.",
+        category: "Beverages",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=800&auto=format&fit=crop",
+        rating: 5.0,
+    },
+    {
+        id: "42",
+        name: "Gulab Jamun",
+        description: "Soft milk-solid dumplings soaked in sugar syrup.",
         category: "Desserts",
-        image: "https://images.unsplash.com/photo-1593701478530-829b96c8a143?q=80&w=2070&auto=format&fit=crop",
-        isVeg: true,
+        price: 200,
+        image: "https://images.unsplash.com/photo-1517244683847-7456b63c5969?q=80&w=800&auto=format&fit=crop",
+        rating: 5.0,
+    },
+    {
+        id: "43",
+        name: "Chabila Raita",
+        description: "Flavorful curd preparation with spices and herbs.",
+        category: "Sides & Dal",
+        price: 200,
+        image: "https://images.unsplash.com/photo-1585937421612-70a008356f36?q=80&w=800&auto=format&fit=crop",
+        rating: 4.7,
     },
 ];
+
 
 export default function MenuPage() {
     const [activeCategory, setActiveCategory] = useState("All Items");
@@ -106,34 +432,36 @@ export default function MenuPage() {
         : menuItems.filter(item => item.category === activeCategory);
 
     return (
-        <div className="pt-36 pb-20 min-h-screen bg-neutral-cream">
+        <div className="pt-36 pb-20 min-h-screen bg-background">
             <div className="container mx-auto px-4">
                 <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
                     <div>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-text-dark mb-4">Our Menu</h1>
-                        <p className="text-gray-600 max-w-xl">
+                        <span className="text-accent font-bold tracking-widest uppercase text-sm mb-2 block">Explore</span>
+                        <h1 className="text-4xl md:text-5xl font-bold text-text-dark mb-4">Our <span className="text-primary">Menu</span></h1>
+                        <div className="h-1 w-20 bg-accent mb-4 rounded-full" />
+                        <p className="text-text-muted max-w-xl">
                             Explore authentic North Indian delicacies prepared with love and tradition.
                             From spicy Chole Bhature to buttery Naans.
                         </p>
                     </div>
-                    <button className="flex items-center gap-2 px-6 py-3 border border-primary text-primary hover:bg-primary hover:text-white rounded-full font-bold transition-all">
+                    <button className="flex items-center gap-2 px-6 py-3 bg-primary hover:bg-primary-dark text-white rounded-full font-bold transition-all shadow-lg">
                         <Download size={20} />
                         Download PDF
                     </button>
                 </div>
 
                 {/* Categories */}
-                <div className="sticky top-24 z-30 bg-neutral-cream/95 backdrop-blur-sm py-4 mb-8 overflow-x-auto no-scrollbar">
+                <div className="sticky top-24 z-30 bg-background/95 backdrop-blur-sm py-4 mb-8 overflow-x-auto no-scrollbar">
                     <div className="flex gap-4 min-w-max px-2">
                         {categories.map((cat) => (
                             <button
                                 key={cat}
                                 onClick={() => setActiveCategory(cat)}
                                 className={clsx(
-                                    "px-6 py-2 rounded-full font-medium transition-all whitespace-nowrap",
+                                    "px-6 py-2 rounded-full font-semibold transition-all whitespace-nowrap",
                                     activeCategory === cat
                                         ? "bg-primary text-white shadow-lg shadow-primary/30"
-                                        : "bg-white text-gray-600 hover:bg-gray-100"
+                                        : "bg-white text-text-dark border border-accent/30 hover:border-primary/50"
                                 )}
                             >
                                 {cat}
@@ -150,7 +478,7 @@ export default function MenuPage() {
                 </div>
 
                 {filteredItems.length === 0 && (
-                    <div className="text-center py-20 text-gray-500">
+                    <div className="text-center py-20 text-text-muted">
                         No items found in this category.
                     </div>
                 )}
@@ -158,3 +486,4 @@ export default function MenuPage() {
         </div>
     );
 }
+

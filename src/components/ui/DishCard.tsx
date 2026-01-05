@@ -1,7 +1,6 @@
 "use client";
 
 import { Star, Plus } from "lucide-react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 interface DishProps {
@@ -27,7 +26,7 @@ export default function DishCard({
     return (
         <motion.div
             whileHover={{ y: -5 }}
-            className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-neutral-100 group h-full flex flex-col"
+            className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border-2 border-accent/20 hover:border-primary/30 group h-full flex flex-col"
         >
             <div className="relative h-48 w-full overflow-hidden">
                 {/* Type Badge */}
@@ -38,9 +37,9 @@ export default function DishCard({
                 </div>
 
                 {/* Rating Badge */}
-                <div className="absolute top-3 right-3 z-10 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-md shadow-sm flex items-center gap-1">
+                <div className="absolute top-3 right-3 z-10 bg-accent text-text-dark px-2 py-1 rounded-md shadow-sm flex items-center gap-1">
                     <span className="text-xs font-bold">{rating}</span>
-                    <Star size={12} className="text-accent fill-accent" />
+                    <Star size={12} className="fill-text-dark" />
                 </div>
 
                 <img
@@ -51,14 +50,14 @@ export default function DishCard({
             </div>
 
             <div className="p-4 flex-1 flex flex-col">
-                <h3 className="font-serif font-bold text-xl text-text-dark mb-1">{name}</h3>
-                <p className="text-sm text-gray-500 line-clamp-2 mb-4 flex-1">{description}</p>
+                <h3 className="font-bold text-xl text-text-dark mb-1">{name}</h3>
+                <p className="text-sm text-text-muted line-clamp-2 mb-4 flex-1">{description}</p>
 
                 <div className="flex items-center justify-between mt-auto">
                     <span className="text-xl font-bold text-primary">₹{price}</span>
                     <button
                         onClick={onAdd}
-                        className="w-10 h-10 rounded-full bg-neutral-100 hover:bg-primary hover:text-white flex items-center justify-center transition-colors text-primary"
+                        className="w-10 h-10 rounded-full bg-primary hover:bg-primary-dark text-white flex items-center justify-center transition-colors"
                         aria-label="Add to cart"
                     >
                         <Plus size={20} />

@@ -29,13 +29,13 @@ const features = [
 
 export default function WhyChetram() {
     return (
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
                 <ScrollReveal>
                     <div className="text-center mb-16">
                         <h2 className="text-primary font-bold tracking-widest uppercase text-sm mb-2">Why Choose Us</h2>
-                        <h3 className="text-4xl font-serif font-bold text-text-dark">The Chetram Experience</h3>
-                        <div className="h-1 w-20 bg-primary mt-4 rounded-full mx-auto" />
+                        <h3 className="text-4xl font-bold text-text-dark">The <span className="text-accent">Chetram</span> Experience</h3>
+                        <div className="h-1 w-20 bg-accent mt-4 rounded-full mx-auto" />
                     </div>
                 </ScrollReveal>
 
@@ -47,13 +47,13 @@ export default function WhyChetram() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: false }}
                             transition={{ delay: index * 0.1 }}
-                            className="p-8 rounded-2xl bg-neutral-cream/50 hover:bg-white hover:shadow-xl border border-transparent hover:border-neutral-100 transition-all duration-300 text-center group"
+                            className="p-8 rounded-2xl bg-white hover:shadow-xl border border-primary/20 transition-all duration-300 text-center group"
                         >
-                            <div className="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center text-primary mb-6 shadow-sm group-hover:scale-110 transition-transform duration-300 group-hover:bg-primary group-hover:text-white">
+                            <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform duration-300 group-hover:bg-accent group-hover:text-text-dark">
                                 <feature.icon size={32} />
                             </div>
                             <h4 className="text-xl font-bold text-text-dark mb-3">{feature.title}</h4>
-                            <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+                            <p className="text-text-muted leading-relaxed">{feature.description}</p>
                         </motion.div>
                     ))}
                 </div>

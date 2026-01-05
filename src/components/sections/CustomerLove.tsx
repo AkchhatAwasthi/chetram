@@ -28,14 +28,16 @@ const testimonials = [
 
 export default function CustomerLove() {
     return (
-        <section className="py-24 bg-neutral-cream/30">
+        <section className="py-24 bg-background">
             <div className="container mx-auto px-4">
                 <ScrollReveal>
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl md:text-5xl font-serif font-bold text-text-dark mb-4">
-                            Customer Love
+                        <span className="text-accent font-bold tracking-widest uppercase text-sm mb-2 block">Testimonials</span>
+                        <h2 className="text-4xl md:text-5xl font-bold text-text-dark mb-4">
+                            Customer <span className="text-primary">Love</span>
                         </h2>
-                        <p className="text-text-muted text-lg">
+                        <div className="h-1 w-20 bg-accent mt-4 rounded-full mx-auto" />
+                        <p className="text-text-muted text-lg mt-4">
                             Hear what our happy customers have to say
                         </p>
                     </div>
@@ -47,7 +49,7 @@ export default function CustomerLove() {
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: false }}
                         transition={{ duration: 0.6 }}
-                        className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl"
+                        className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl border-4 border-accent/30"
                     >
                         <Image
                             src="https://images.unsplash.com/photo-1559329007-40df8a9345d8?q=80&w=2074&auto=format&fit=crop"
@@ -65,9 +67,9 @@ export default function CustomerLove() {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: false }}
                                 transition={{ delay: index * 0.15 }}
-                                className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow relative"
+                                className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow relative border border-accent/20"
                             >
-                                <Quote className="absolute top-4 right-4 text-primary/10" size={48} />
+                                <Quote className="absolute top-4 right-4 text-accent/30" size={48} />
                                 <div className="flex gap-1 mb-3">
                                     {[...Array(testimonial.rating)].map((_, i) => (
                                         <Star key={i} size={16} className="fill-accent text-accent" />

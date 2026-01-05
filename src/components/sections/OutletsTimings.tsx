@@ -31,14 +31,16 @@ const outlets = [
 
 export default function OutletsTimings() {
     return (
-        <section className="py-24 bg-neutral-cream/30">
+        <section className="py-24 bg-background">
             <div className="container mx-auto px-4">
                 <ScrollReveal>
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl md:text-5xl font-serif font-bold text-text-dark mb-4">
-                            Our Outlets & Timings
+                        <span className="text-accent font-bold tracking-widest uppercase text-sm mb-2 block">Visit Us</span>
+                        <h2 className="text-4xl md:text-5xl font-bold text-text-dark mb-4">
+                            Our Outlets & <span className="text-primary">Timings</span>
                         </h2>
-                        <p className="text-text-muted text-lg">
+                        <div className="h-1 w-20 bg-accent mt-4 rounded-full mx-auto" />
+                        <p className="text-text-muted text-lg mt-4">
                             Visit us at any of our convenient locations across Lucknow
                         </p>
                     </div>
@@ -49,10 +51,10 @@ export default function OutletsTimings() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: false }}
-                        className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl"
+                        className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl border-4 border-accent/30"
                     >
                         <Image
-                            src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=2074&auto=format&fit=crop"
+                            src="https://github.com/AkchhatAwasthi/chetramimages/blob/main/ANM09061-Edit.jpg?raw=true"
                             alt="Restaurant exterior"
                             fill
                             className="object-cover"
@@ -67,7 +69,7 @@ export default function OutletsTimings() {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: false }}
                                 transition={{ delay: index * 0.1 }}
-                                className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow"
+                                className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow border border-accent/20"
                             >
                                 <h3 className="text-xl font-bold text-text-dark mb-3">{outlet.name}</h3>
                                 <div className="space-y-2 text-text-muted">
@@ -83,7 +85,7 @@ export default function OutletsTimings() {
                                         <Clock size={18} className="text-primary mt-1 flex-shrink-0" />
                                         <div>
                                             <p className="font-semibold text-text-dark">{outlet.timing}</p>
-                                            <p className="text-sm text-accent">{outlet.specialTiming}</p>
+                                            <p className="text-sm text-accent font-semibold">{outlet.specialTiming}</p>
                                         </div>
                                     </div>
                                 </div>

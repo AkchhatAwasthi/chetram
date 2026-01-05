@@ -1,32 +1,88 @@
 @import "tailwindcss";
 
 @theme {
+  /* ========== BRAND COLOR SYSTEM ========== */
+
+  /* Primary Brand Colors */
+  --color-primary: #C4161C;
+  /* Primary Red (CTAs, buttons, highlights) */
+  --color-primary-dark: #8B0000;
+  /* Dark Maroon (hover states) */
+  --color-accent: #FFC72C;
+  /* Primary Yellow (accents, emphasis, icons) */
+  --color-accent-soft: #FFD966;
+  /* Soft Golden Yellow (icons, badges) */
+
   /* Background Colors */
-  --color-background: #FAF6F2;
-  --color-foreground: #2B2521;
+  --color-background: #FFF8E6;
+  /* Main background (warm light cream) */
+  --color-background-alt: #C4161C;
+  /* Alternate section background (red) */
+  --color-foreground: #2A1A0A;
+  /* Primary text */
 
-  /* Primary Colors (CTAs & highlights only) */
-  --color-primary: #C44A1A;
-  --color-primary-dark: #A33D15;
-
-  /* Secondary & Text Colors */
-  --color-secondary: #6B625C;
-  --color-text-dark: #2B2521;
-  --color-text-muted: #6B625C;
-
-  /* Accent Colors */
-  --color-accent: #D8A23A;
+  /* Text Colors */
+  --color-text-dark: #2A1A0A;
+  /* Primary text on light backgrounds */
+  --color-text-light: #FFFFFF;
+  /* Text on red backgrounds */
+  --color-text-muted: #6B4A2D;
+  /* Secondary / muted text */
+  --color-secondary: #6B4A2D;
+  /* Alias for muted text */
 
   /* Neutral Colors (Cards & Sections) */
-  --color-neutral-cream: #EFE6DD;
+  --color-neutral-cream: #FFF8E6;
+  /* Same as main background */
+  --color-neutral-100: #F5EED9;
+  /* Slightly darker cream for borders */
 
-  /* Fonts */
-  --font-sans: ui-sans-serif, system-ui, sans-serif;
-  --font-serif: ui-serif, Georgia, serif;
+  /* ========== TYPOGRAPHY ========== */
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Playfair Display', ui-serif, Georgia, serif;
 }
 
+/* Base Styles */
 body {
   background-color: var(--color-background);
   color: var(--color-foreground);
   font-family: var(--font-sans);
+}
+
+/* Typography Classes */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+/* Button Base Styles */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* Red Section with White Text */
+.section-red {
+  background-color: var(--color-background-alt);
+  color: var(--color-text-light);
+}
+
+/* Scrollbar Styling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

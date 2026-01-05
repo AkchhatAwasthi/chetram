@@ -13,14 +13,18 @@ export default function AboutPage() {
     return (
         <main className="pt-24">
             {/* Hero Section */}
-            <section className="bg-gradient-to-b from-primary/5 to-transparent py-16">
+            <section className="bg-accent py-16">
                 <div className="container mx-auto px-4 text-center">
-                    <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-text-dark mb-6">
+                    <span className="inline-block py-2 px-4 rounded-full bg-primary text-white font-bold text-sm mb-6">
+                        🌶️ Our Story
+                    </span>
+                    <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-text-dark mb-6">
                         About <span className="text-primary">Chetram</span>
                     </h1>
-                    <p className="text-xl md:text-2xl text-text-muted max-w-3xl mx-auto leading-relaxed">
+                    <p className="text-xl md:text-2xl text-text-dark/80 max-w-3xl mx-auto leading-relaxed">
                         A story of passion, authenticity, and bringing Delhi's iconic flavors to the heart of Lucknow.
                     </p>
+                    <div className="h-1 w-20 bg-primary mt-6 rounded-full mx-auto" />
                 </div>
             </section>
 

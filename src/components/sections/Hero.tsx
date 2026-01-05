@@ -12,7 +12,7 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/30 z-10" />
                 {/* Placeholder for Hero Image - In a real app, use next/image with a local file */}
                 <img
-                    src="https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=2070&auto=format&fit=crop"
+                    src="https://github.com/AkchhatAwasthi/upscalers-images/blob/main/bhature_with_raita_ANM05297-Edit%20(1).jpg?raw=true"
                     alt="Delicious North Indian Food Spread"
                     className="w-full h-full object-cover opacity-80"
                 />
@@ -24,14 +24,14 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <span className="inline-block py-1 px-3 rounded-full bg-primary/20 border border-primary text-primary-dark font-semibold text-sm mb-6 backdrop-blur-sm">
-                        Est. 2010 • Lucknow
+                    <span className="inline-block py-2 px-4 rounded-full bg-accent text-text-dark font-bold text-sm mb-6">
+                        🌶️ Est. 2010 • Lucknow
                     </span>
-                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 leading-tight">
+                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
                         Lucknow's Famous <br />
-                        <span className="text-primary">Chur Chur Naan</span> & <span className="text-accent">Chole Bhature</span>
+                        <span className="text-accent">Chur Chur Naan</span> & <span className="text-primary">Pindi Chole Bhature</span>
                     </h1>
-                    <p className="text-lg md:text-xl text-neutral-cream/90 mb-10 max-w-2xl mx-auto">
+                    <p className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl mx-auto">
                         Experience the authentic taste of North India right here in Lucknow.
                         Crispy, buttery, and absolutely delicious.
                     </p>
@@ -39,20 +39,20 @@ export default function Hero() {
                     <div className="flex flex-col md:flex-row items-center justify-center gap-4">
                         <Link
                             href="/menu"
-                            className="w-full md:w-auto bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg hover:shadow-primary/50 hover:-translate-y-1 flex items-center justify-center gap-2"
+                            className="w-full md:w-auto bg-accent hover:bg-accent-soft text-text-dark px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg hover:shadow-accent/50 hover:-translate-y-1 flex items-center justify-center gap-2"
                         >
                             Explore Menu <ArrowRight size={20} />
                         </Link>
                         <Link
                             href="/contact"
-                            className="w-full md:w-auto bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center"
+                            className="w-full md:w-auto bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center shadow-lg hover:shadow-primary/50 hover:-translate-y-1"
                         >
-                            Contact Us
+                            Find Our Outlets
                         </Link>
                     </div>
 
-                    <div className="mt-12 flex items-center justify-center gap-2 text-sm text-neutral-cream/70">
-                        <MapPin size={16} className="text-primary" />
+                    <div className="mt-12 flex items-center justify-center gap-2 text-sm text-white/70">
+                        <MapPin size={16} className="text-accent" />
                         <span>Serving at 5 locations across Lucknow</span>
                     </div>
                 </motion.div>

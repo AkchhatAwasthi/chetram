@@ -17,7 +17,7 @@ const milestones = [
 
 export default function OurJourney() {
     return (
-        <section className="py-24 bg-gradient-to-b from-white to-neutral-cream/30 relative overflow-hidden">
+        <section className="py-24 bg-background relative overflow-hidden">
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-5">
                 <Image
@@ -32,13 +32,13 @@ export default function OurJourney() {
                 {/* Header */}
                 <ScrollReveal>
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-primary font-bold tracking-widest uppercase text-sm mb-3">
+                        <span className="text-accent font-bold tracking-widest uppercase text-sm mb-3 block">
                             Our Journey
-                        </h2>
-                        <h3 className="text-4xl md:text-5xl font-serif font-bold text-text-dark mb-6">
+                        </span>
+                        <h3 className="text-4xl md:text-5xl font-bold text-text-dark mb-6">
                             From Humble Beginnings to <span className="text-primary">Lucknow's Favorite</span>
                         </h3>
-                        <div className="h-1 w-24 bg-primary rounded-full mx-auto mb-6" />
+                        <div className="h-1 w-24 bg-accent rounded-full mx-auto mb-6" />
                         <p className="text-lg text-text-muted leading-relaxed">
                             Every great journey has milestones. Here are some of the key moments that shaped Chetram into what it is today.
                         </p>
@@ -55,7 +55,7 @@ export default function OurJourney() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: false }}
                                 transition={{ delay: index * 0.1 }}
-                                className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-neutral-100 group hover:border-primary/30"
+                                className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-accent/20 group hover:border-primary/30"
                             >
                                 <div className="text-3xl font-bold text-primary mb-3 group-hover:scale-110 transition-transform">
                                     {milestone.year}
@@ -70,10 +70,10 @@ export default function OurJourney() {
 
                 {/* Looking Ahead */}
                 <ScrollReveal delay={0.3}>
-                    <div className="max-w-5xl mx-auto bg-gradient-to-r from-primary/5 via-white to-accent/5 p-12 rounded-2xl border border-primary/10 shadow-xl">
+                    <div className="max-w-5xl mx-auto bg-white p-12 rounded-2xl border border-accent/20 shadow-xl">
                         <div className="text-center mb-8">
-                            <h4 className="text-3xl font-serif font-bold text-text-dark mb-4">
-                                Looking Ahead
+                            <h4 className="text-3xl font-bold text-text-dark mb-4">
+                                Looking <span className="text-primary">Ahead</span>
                             </h4>
                             <p className="text-lg text-text-muted leading-relaxed max-w-3xl mx-auto">
                                 As we look to the future, our vision is clear: to expand our presence across Uttar Pradesh while maintaining the same authentic taste and quality that our customers love. We're also exploring new menu innovations and sustainable practices to serve you better.
@@ -91,7 +91,7 @@ export default function OurJourney() {
                             </Link>
                             <Link
                                 href="/contact"
-                                className="w-full sm:w-auto bg-white hover:bg-neutral-50 text-text-dark border-2 border-neutral-200 hover:border-primary px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-2"
+                                className="w-full sm:w-auto bg-accent hover:bg-accent-soft text-text-dark px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-2 shadow-lg"
                             >
                                 <MapPin size={20} />
                                 Visit Our Outlets
@@ -104,7 +104,7 @@ export default function OurJourney() {
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: false }}
                             transition={{ delay: 0.5 }}
-                            className="mt-8 pt-8 border-t border-neutral-200 text-center"
+                            className="mt-8 pt-8 border-t border-accent/20 text-center"
                         >
                             <p className="text-text-muted mb-3">Have questions or feedback? We'd love to hear from you!</p>
                             <a

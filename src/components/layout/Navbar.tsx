@@ -32,7 +32,7 @@ export default function Navbar() {
     return (
         <nav
             className={clsx(
-                "fixed top-10 w-full z-40 bg-white/95 backdrop-blur-md shadow-md transition-all duration-300 overflow-hidden",
+                "fixed top-10 w-full z-40 bg-background/95 backdrop-blur-md shadow-md transition-all duration-300 overflow-hidden border-b border-accent/20",
                 scrolled ? "h-14" : "h-16"
             )}
         >
@@ -59,7 +59,7 @@ export default function Navbar() {
                             key={link.name}
                             href={link.href}
                             className={clsx(
-                                "text-sm font-medium uppercase tracking-wide transition-colors hover:text-primary",
+                                "text-sm font-semibold uppercase tracking-wide transition-colors hover:text-primary",
                                 pathname === link.href ? "text-primary" : "text-text-dark"
                             )}
                         >
@@ -72,10 +72,10 @@ export default function Navbar() {
                 <div className="hidden md:flex items-center gap-4">
                     <a
                         href="tel:+919876543210"
-                        className="flex items-center gap-2 text-text-dark hover:text-primary transition-colors"
+                        className="flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-full font-semibold transition-colors"
                     >
-                        <Phone size={18} />
-                        <span className="text-sm font-medium">987 654 3210</span>
+                        <Phone size={16} />
+                        <span className="text-sm">Call Now</span>
                     </a>
                 </div>
 
@@ -96,7 +96,7 @@ export default function Navbar() {
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: "auto" }}
                         exit={{ opacity: 0, height: 0 }}
-                        className="md:hidden bg-white/95 backdrop-blur-xl border-t border-neutral-100"
+                        className="md:hidden bg-background/95 backdrop-blur-xl border-t border-accent/20"
                     >
                         <div className="flex flex-col p-6 gap-4">
                             {navLinks.map((link) => (
@@ -105,7 +105,7 @@ export default function Navbar() {
                                     href={link.href}
                                     onClick={() => setIsOpen(false)}
                                     className={clsx(
-                                        "text-lg font-medium py-2 border-b border-neutral-100",
+                                        "text-lg font-semibold py-2 border-b border-accent/10",
                                         pathname === link.href ? "text-primary" : "text-text-dark"
                                     )}
                                 >
@@ -116,7 +116,7 @@ export default function Navbar() {
                             <div className="flex flex-col gap-4 mt-4">
                                 <a
                                     href="tel:+919876543210"
-                                    className="flex items-center gap-2 text-text-dark"
+                                    className="flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-full font-semibold transition-colors"
                                 >
                                     <Phone size={20} />
                                     Call: 987 654 3210
