@@ -4,17 +4,31 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, MapPin } from "lucide-react";
 
+// Hero images - different for desktop and mobile
+const heroImages = {
+    desktop: "https://github.com/AkchhatAwasthi/upscalers-images/blob/main/bhature_with_raita_ANM05297-Edit%20(1).jpg?raw=true",
+    mobile: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Chur%20Chur%20Naan%20with%20Dal%20Makhani%20+%20Shahi%20Paneer%20+%20Raita2_.jpg?raw=true"
+};
+
 export default function Hero() {
     return (
         <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden bg-text-dark mt-24">
             {/* Background Image with Overlay */}
             <div className="absolute inset-0 z-0">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/30 z-10" />
-                {/* Placeholder for Hero Image - In a real app, use next/image with a local file */}
+
+                {/* Desktop Image - hidden on mobile */}
                 <img
-                    src="https://github.com/AkchhatAwasthi/upscalers-images/blob/main/bhature_with_raita_ANM05297-Edit%20(1).jpg?raw=true"
+                    src={heroImages.desktop}
                     alt="Delicious North Indian Food Spread"
-                    className="w-full h-full object-cover opacity-80"
+                    className="hidden md:block w-full h-full object-cover opacity-80"
+                />
+
+                {/* Mobile Image - hidden on desktop, uses object-center to better fit mobile screens */}
+                <img
+                    src={heroImages.mobile}
+                    alt="Delicious North Indian Food Spread"
+                    className="block md:hidden w-full h-full object-cover object-center opacity-80"
                 />
             </div>
 

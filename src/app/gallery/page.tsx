@@ -4,14 +4,14 @@ import { useState } from "react";
 import { X } from "lucide-react";
 
 const galleryImages = [
-    "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=2070&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1626132647523-66f5bf380027?q=80&w=2070&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1606491956689-2ea866880c84?q=80&w=1921&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1546833999-b9f581a1996d?q=80&w=2070&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1514326640560-7d063ef2aed5?q=80&w=2080&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=2070&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2070&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=2070&auto=format&fit=crop",
+    "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Aloo%20Chur%20Chur%20Naan%20(1).jpg?raw=true",
+    "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Aloo%20Pyaz%20Chur%20Chur%20Naan.jpg?raw=true",
+    "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Chole%20Bhature%20(delhi%20pindi%20style)%202%20Pieces%20(1).jpg?raw=true",
+    "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Gobhi%20Chur%20Chur%20Kulcha%20(1%20pc)%20jpg.jpg?raw=true",
+    "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Chur%20Chur%20Naan%20with%20Dal%20Makhani%20+%20Shahi%20Paneer%20+%20Raita2_.jpg?raw=true",
+    "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Gobhi%20Pyaz%20Chur%20Chur%20Kulcha.jpg?raw=true",
+    "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Makke%20ki%20Roti.jpg?raw=true",
+    "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Mix%20Chur%20Chur%20Kulcha.jpg?raw=true",
 ];
 
 export default function GalleryPage() {

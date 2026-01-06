@@ -7,22 +7,22 @@ import ScrollReveal from "@/components/animations/ScrollReveal";
 
 const galleryImages = [
     {
-        src: "https://images.unsplash.com/photo-1626132647523-66f5bf380027?q=80&w=2070&auto=format&fit=crop",
+        src: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/1%20(2).png?raw=true",
         alt: "Chole Bhature",
         title: "Our Signature Chole Bhature",
     },
     {
-        src: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=2074&auto=format&fit=crop",
+        src: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/2%20(4).png?raw=true",
         alt: "Restaurant Outlet",
         title: "Our Bustling Outlets",
     },
     {
-        src: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=2070&auto=format&fit=crop",
+        src: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/3%20(2).png?raw=true",
         alt: "Kitchen Preparation",
         title: "Fresh Preparation Daily",
     },
     {
-        src: "https://images.unsplash.com/photo-1559329007-40df8a9345d8?q=80&w=2074&auto=format&fit=crop",
+        src: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/4.png?raw=true",
         alt: "Happy Customers",
         title: "The Chetram Family",
     },
