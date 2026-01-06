@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
+    unoptimized: true, // Required for static hosting like Netlify to serve local images
     remotePatterns: [
       {
         protocol: "https",
@@ -38,3 +39,4 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
