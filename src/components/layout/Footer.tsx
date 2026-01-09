@@ -63,23 +63,17 @@ export default function Footer() {
 
                     {/* Locations */}
                     <div>
-                        <h3 className="text-lg font-bold text-primary mb-6">Our Outlets</h3>
-                        <ul className="space-y-3">
-                            {[
-                                "Aashiana",
-                                "Naka Hindola",
-                                "Lalbagh",
-                                "Vijay Nagar",
-                                "Hazratganj",
-                            ].map((loc) => (
-                                <li key={loc}>
-                                    <Link href="/contact" className="text-text-dark/80 hover:text-primary transition-colors text-sm flex items-center gap-2">
-                                        <MapPin size={14} className="text-primary" />
-                                        {loc}
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
+                        <h3 className="text-lg font-bold text-primary mb-6">Our Outlet</h3>
+                        <div className="space-y-3">
+                            <Link href="/contact" className="text-text-dark/80 hover:text-primary transition-colors text-sm flex items-center gap-2">
+                                <MapPin size={14} className="text-primary" />
+                                Aashiana, Lucknow
+                            </Link>
+                            <p className="text-text-dark/60 text-sm pl-6">
+                                Power House Chauraha,<br />
+                                Sector H, Aashiana
+                            </p>
+                        </div>
                     </div>
 
                     {/* Contact Info */}

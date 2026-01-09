@@ -7,7 +7,7 @@ import { ArrowRight, MapPin } from "lucide-react";
 // Hero images - different for desktop and mobile
 const heroImages = {
     desktop: "https://github.com/AkchhatAwasthi/upscalers-images/blob/main/bhature_with_raita_ANM05297-Edit%20(1).jpg?raw=true",
-    mobile: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Chur%20Chur%20Naan%20with%20Dal%20Makhani%20+%20Shahi%20Paneer%20+%20Raita2_.jpg?raw=true"
+    mobile: "https://github.com/AkchhatAwasthi/upscalers-images/blob/main/bhature_with_raita_ANM05297-Edit%20(1).jpg?raw=true",
 };
 
 export default function Hero() {
@@ -43,7 +43,7 @@ export default function Hero() {
                     </span>
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
                         Lucknow's Famous <br />
-                        <span className="text-accent">Chur Chur Naan</span> & <span className="text-primary">Pindi Chole Bhature</span>
+                        <span className="text-accent">Pindi Chole Bhature</span> & <span className="text-primary">Chur Chur Naan</span>
                     </h1>
                     <p className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl mx-auto">
                         Experience the authentic taste of North India right here in Lucknow.

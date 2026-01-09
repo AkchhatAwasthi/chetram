@@ -7,6 +7,7 @@ import clsx from "clsx";
 
 const categories = [
     "All Items",
+    "Season Special",
     "Breakfast",
     "Chur Chur Naan",
     "Chur Chur Kulche",
@@ -26,7 +27,7 @@ const menuItems = [
         description: "Soft fluffy bhature served with spicy, slow-cooked chole and traditional accompaniments.",
         category: "Breakfast",
         price: 125,
-        image: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Chole%20Bhature%20(delhi%20pindi%20style)%202%20Pieces%20(1).jpg?raw=true",
+        image: "https://github.com/AkchhatAwasthi/upscalers-images/blob/main/bhature_with_raita_ANM05297-Edit%20(1).jpg?raw=true",
         rating: 4.8,
     },
     {
@@ -417,6 +418,24 @@ const menuItems = [
         name: "Chabila Raita",
         description: "Flavorful curd preparation with spices and herbs.",
         category: "Sides & Dal",
+        price: 40,
+        image: "https://images.unsplash.com/photo-1585937421612-70a008356f36?q=80&w=800&auto=format&fit=crop",
+        rating: 4.7,
+    },
+    {
+        id: "44",
+        name: "Sarso Ka Saag",
+        description: "A flavorful green Sabji made with fresh herbs and spices.",
+        category: "Season Special",
+        price: 40,
+        image: "https://images.unsplash.com/photo-1585937421612-70a008356f36?q=80&w=800&auto=format&fit=crop",
+        rating: 4.7,
+    },
+    {
+        id: "45",
+        name: "Makke Ki Roti",
+        description: "Season special bread made with whole wheat flour.",
+        category: "Season Special",
         price: 40,
         image: "https://images.unsplash.com/photo-1585937421612-70a008356f36?q=80&w=800&auto=format&fit=crop",
         rating: 4.7,

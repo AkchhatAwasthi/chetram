@@ -6,7 +6,7 @@ import { X } from "lucide-react";
 const galleryImages = [
     "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Aloo%20Chur%20Chur%20Naan%20(1).jpg?raw=true",
     "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Aloo%20Pyaz%20Chur%20Chur%20Naan.jpg?raw=true",
-    "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Chole%20Bhature%20(delhi%20pindi%20style)%202%20Pieces%20(1).jpg?raw=true",
+    "https://github.com/AkchhatAwasthi/upscalers-images/blob/main/bhature_with_raita_ANM05297-Edit%20(1).jpg?raw=true",
     "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Gobhi%20Chur%20Chur%20Kulcha%20(1%20pc)%20jpg.jpg?raw=true",
     "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Chur%20Chur%20Naan%20with%20Dal%20Makhani%20+%20Shahi%20Paneer%20+%20Raita2_.jpg?raw=true",
     "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Gobhi%20Pyaz%20Chur%20Chur%20Kulcha.jpg?raw=true",

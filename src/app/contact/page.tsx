@@ -143,72 +143,43 @@ export default function ContactPage() {
                         <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-4">Our <span className="text-accent">Locations</span></h2>
                         <div className="h-1 w-20 bg-primary mt-4 rounded-full mx-auto mb-4" />
                         <p className="text-text-muted max-w-2xl mx-auto">
-                            Find us at 5 convenient locations across Lucknow. Open daily from 9:00 AM to 10:00 PM.
+                            Visit us at our outlet in Aashiana, Lucknow. Open daily from 9:00 AM to 10:00 PM.
                         </p>
                     </div>
 
                     <div className="flex flex-col lg:flex-row gap-8 min-h-[600px]">
                         {/* List */}
                         <div className="w-full lg:w-1/3 flex flex-col gap-4 overflow-y-auto max-h-[600px] pr-2">
-                            {[
-                                {
-                                    name: "Chetram Aashiana",
-                                    address: "near Power House Chauraha, Bank of Baroda, Sector H, Aashiana, Lucknow",
-                                    phone: "+91 987 654 3210",
-                                },
-                                {
-                                    name: "Chetram Naka Hindola",
-                                    address: "Opposite Gurudwara, Naka Hindola, Lucknow",
-                                    phone: "+91 987 654 3211",
-                                },
-                                {
-                                    name: "Chetram Lalbagh",
-                                    address: "Near Novelty Cinema, Lalbagh, Lucknow",
-                                    phone: "+91 987 654 3212",
-                                },
-                                {
-                                    name: "Chetram Vijay Nagar",
-                                    address: "Main Market, Vijay Nagar, Krishna Nagar, Lucknow",
-                                    phone: "+91 987 654 3213",
-                                },
-                                {
-                                    name: "Chetram Hazratganj",
-                                    address: "Near Sahu Cinema, Hazratganj, Lucknow",
-                                    phone: "+91 987 654 3214",
-                                },
-                            ].map((loc, index) => (
-                                <div
-                                    key={index}
-                                    className="bg-white p-6 rounded-xl shadow-sm border border-primary/20 hover:border-accent transition-all cursor-pointer group"
-                                >
-                                    <div className="flex justify-between items-start mb-2">
-                                        <h3 className="font-bold text-lg text-text-dark group-hover:text-primary transition-colors">{loc.name}</h3>
-                                        <MapPin size={20} className="text-primary group-hover:text-accent" />
-                                    </div>
-                                    <p className="text-sm text-text-muted mb-4">{loc.address}</p>
+                            <div
+                                className="bg-white p-6 rounded-xl shadow-sm border border-primary/20 hover:border-accent transition-all cursor-pointer group"
+                            >
+                                <div className="flex justify-between items-start mb-2">
+                                    <h3 className="font-bold text-lg text-text-dark group-hover:text-primary transition-colors">Chetram Aashiana</h3>
+                                    <MapPin size={20} className="text-primary group-hover:text-accent" />
+                                </div>
+                                <p className="text-sm text-text-muted mb-4">Near Power House Chauraha, Bank of Baroda, Sector H, Aashiana, Lucknow</p>
 
-                                    <div className="flex flex-col gap-2 text-sm text-text-muted">
-                                        <div className="flex items-center gap-2">
-                                            <Phone size={14} className="text-primary" /> {loc.phone}
-                                        </div>
-                                        <div className="flex items-center gap-2">
-                                            <Clock size={14} className="text-primary" /> 9:00 AM - 10:00 PM
-                                        </div>
+                                <div className="flex flex-col gap-2 text-sm text-text-muted">
+                                    <div className="flex items-center gap-2">
+                                        <Phone size={14} className="text-primary" /> +91 987 654 3210
                                     </div>
-
-                                    <div className="mt-4 pt-4 border-t border-primary/10 flex gap-2">
-                                        <a
-                                            href={`tel:${loc.phone}`}
-                                            className="flex-1 bg-background hover:bg-accent/30 text-text-dark py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-2"
-                                        >
-                                            <Phone size={14} /> Call
-                                        </a>
-                                        <button className="flex-1 bg-primary hover:bg-primary-dark text-white py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-2">
-                                            <MapPin size={14} /> Direction
-                                        </button>
+                                    <div className="flex items-center gap-2">
+                                        <Clock size={14} className="text-primary" /> 9:00 AM - 10:00 PM
                                     </div>
                                 </div>
-                            ))}
+
+                                <div className="mt-4 pt-4 border-t border-primary/10 flex gap-2">
+                                    <a
+                                        href="tel:+919876543210"
+                                        className="flex-1 bg-background hover:bg-accent/30 text-text-dark py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-2"
+                                    >
+                                        <Phone size={14} /> Call
+                                    </a>
+                                    <button className="flex-1 bg-primary hover:bg-primary-dark text-white py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-2">
+                                        <MapPin size={14} /> Direction
+                                    </button>
+                                </div>
+                            </div>
                         </div>
 
                         {/* Map Placeholder */}

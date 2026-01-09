@@ -7,25 +7,11 @@ import ScrollReveal from "@/components/animations/ScrollReveal";
 
 const outlets = [
     {
-        name: "Gomti Nagar Outlet",
-        address: "Vibhuti Khand, Gomti Nagar, Lucknow",
+        name: "Aashiana Outlet",
+        address: "Power House Chauraha, Sector H, Aashiana, Lucknow",
         phone: "+91 98765 43210",
-        timing: "7:00 AM - 11:00 PM",
-        specialTiming: "Morning Chole Bhature: 7:00 AM - 11:00 AM",
-    },
-    {
-        name: "Hazratganj Outlet",
-        address: "MG Marg, Hazratganj, Lucknow",
-        phone: "+91 98765 43211",
-        timing: "7:00 AM - 11:00 PM",
-        specialTiming: "Morning Chole Bhature: 7:00 AM - 11:00 AM",
-    },
-    {
-        name: "Alambagh Outlet",
-        address: "Kanpur Road, Alambagh, Lucknow",
-        phone: "+91 98765 43212",
-        timing: "10:00 AM - 10:00 PM",
-        specialTiming: "Full Day Service",
+        timing: "9:00 AM - 10:00 PM",
+        specialTiming: "Open All Days",
     },
 ];
 
