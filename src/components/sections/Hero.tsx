@@ -67,7 +67,7 @@ export default function Hero() {
 
                     <div className="mt-12 flex items-center justify-center gap-2 text-sm text-white/70">
                         <MapPin size={16} className="text-accent" />
-                        <span>Serving at 5 locations across Lucknow</span>
+                        <span>Serving at 1 locations across Lucknow</span>
                     </div>
                 </motion.div>
             </div>
