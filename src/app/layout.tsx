@@ -26,6 +26,11 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Chetram | Lucknow's Famous Chur Chur Naan & Chole Bhature",
   description: "Experience authentic North Indian cuisine at Chetram. Famous for Chur Chur Naan, Pindi Chole Bhature, and quick bites in Lucknow.",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({
