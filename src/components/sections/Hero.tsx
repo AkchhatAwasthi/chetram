@@ -39,7 +39,7 @@ export default function Hero() {
                     transition={{ duration: 0.8 }}
                 >
                     <span className="inline-block py-2 px-4 rounded-full bg-accent text-text-dark font-bold text-sm mb-6">
-                        🌶️ Est. 2010 • Lucknow
+                        🌶️ Est. 2022 • Lucknow
                     </span>
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
                         Lucknow's Famous <br />
@@ -61,13 +61,13 @@ export default function Hero() {
                             href="/contact"
                             className="w-full md:w-auto bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center shadow-lg hover:shadow-primary/50 hover:-translate-y-1"
                         >
-                            Find Our Outlets
+                            Find Our Outlet
                         </Link>
                     </div>
 
                     <div className="mt-12 flex items-center justify-center gap-2 text-sm text-white/70">
                         <MapPin size={16} className="text-accent" />
-                        <span>Serving at 1 locations across Lucknow</span>
+                        <span>Serving in Ashiana, Lucknow</span>
                     </div>
                 </motion.div>
             </div>

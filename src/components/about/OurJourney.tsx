@@ -1,18 +1,42 @@
 "use client";
 
-import { ArrowRight, MapPin, Phone } from "lucide-react";
+import { ArrowRight, MapPin, Phone, Heart, Utensils, Leaf, Users, Star, Clock } from "lucide-react";
 import { motion } from "framer-motion";
 import ScrollReveal from "@/components/animations/ScrollReveal";
 import Link from "next/link";
 import Image from "next/image";
 
-const milestones = [
-    { year: "2010", event: "First outlet opens in Aashiana" },
-    { year: "2013", event: "Expanded to Gomti Nagar" },
-    { year: "2016", event: "Launched our signature Chur Chur Naan" },
-    { year: "2019", event: "Opened 4th outlet in Hazratganj" },
-    { year: "2022", event: "Introduced eco-friendly packaging" },
-    { year: "2024", event: "5 outlets serving 50,000+ customers" },
+const whyCustomersLoveUs = [
+    {
+        icon: Utensils,
+        title: "Authentic Taste",
+        description: "Genuine Delhi-style flavors that transport you straight to Chandni Chowk with every bite."
+    },
+    {
+        icon: Heart,
+        title: "Made with Love",
+        description: "Every dish is prepared with passion and care, just like homemade food should be."
+    },
+    {
+        icon: Leaf,
+        title: "Fresh Ingredients",
+        description: "We source the freshest ingredients daily to ensure quality in every meal."
+    },
+    {
+        icon: Users,
+        title: "Family Legacy",
+        description: "Recipes passed down through generations, perfected over years of dedication."
+    },
+    {
+        icon: Star,
+        title: "Customer First",
+        description: "Your satisfaction is our priority. We listen, improve, and deliver excellence."
+    },
+    {
+        icon: Clock,
+        title: "Consistent Quality",
+        description: "The same great taste every time you visit, from morning till night."
+    },
 ];
 
 export default function OurJourney() {
@@ -33,22 +57,22 @@ export default function OurJourney() {
                 <ScrollReveal>
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <span className="text-accent font-bold tracking-widest uppercase text-sm mb-3 block">
-                            Our Journey
+                            Why Choose Us
                         </span>
                         <h3 className="text-4xl md:text-5xl font-bold text-text-dark mb-6">
-                            From Humble Beginnings to <span className="text-primary">Lucknow's Favorite</span>
+                            Why Customers <span className="text-primary">Love Chetram</span>
                         </h3>
                         <div className="h-1 w-24 bg-accent rounded-full mx-auto mb-6" />
                         <p className="text-lg text-text-muted leading-relaxed">
-                            Every great journey has milestones. Here are some of the key moments that shaped Chetram into what it is today.
+                            What makes us special? Here's why thousands of food lovers choose Chetram for their authentic North Indian cravings.
                         </p>
                     </div>
                 </ScrollReveal>
 
-                {/* Timeline */}
-                <div className="max-w-4xl mx-auto mb-20">
+                {/* Why Customers Love Us Cards */}
+                <div className="max-w-5xl mx-auto mb-20">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {milestones.map((milestone, index) => (
+                        {whyCustomersLoveUs.map((item, index) => (
                             <motion.div
                                 key={index}
                                 initial={{ opacity: 0, y: 30 }}
@@ -57,11 +81,14 @@ export default function OurJourney() {
                                 transition={{ delay: index * 0.1 }}
                                 className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-accent/20 group hover:border-primary/30"
                             >
-                                <div className="text-3xl font-bold text-primary mb-3 group-hover:scale-110 transition-transform">
-                                    {milestone.year}
+                                <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                                    <item.icon size={28} className="text-primary" />
                                 </div>
+                                <h4 className="text-xl font-bold text-text-dark mb-2 group-hover:text-primary transition-colors">
+                                    {item.title}
+                                </h4>
                                 <p className="text-text-muted leading-relaxed">
-                                    {milestone.event}
+                                    {item.description}
                                 </p>
                             </motion.div>
                         ))}
@@ -76,7 +103,7 @@ export default function OurJourney() {
                                 Looking <span className="text-primary">Ahead</span>
                             </h4>
                             <p className="text-lg text-text-muted leading-relaxed max-w-3xl mx-auto">
-                                As we look to the future, our vision is clear: to expand our presence across Uttar Pradesh while maintaining the same authentic taste and quality that our customers love. We're also exploring new menu innovations and sustainable practices to serve you better.
+                                As we look to the future, our vision is clear: to continue serving authentic Delhi-style food with the same passion and quality that our customers love. We're constantly exploring new menu innovations and sustainable practices to serve you better.
                             </p>
                         </div>
 
@@ -94,7 +121,7 @@ export default function OurJourney() {
                                 className="w-full sm:w-auto bg-accent hover:bg-accent-soft text-text-dark px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-2 shadow-lg"
                             >
                                 <MapPin size={20} />
-                                Visit Our Outlets
+                                Visit Our Outlet
                             </Link>
                         </div>
 
@@ -108,11 +135,11 @@ export default function OurJourney() {
                         >
                             <p className="text-text-muted mb-3">Have questions or feedback? We'd love to hear from you!</p>
                             <a
-                                href="tel:+919876543210"
+                                href="tel:+917054352288"
                                 className="inline-flex items-center gap-2 text-primary hover:text-primary-dark font-semibold transition-colors"
                             >
                                 <Phone size={18} />
-                                +91 987 654 3210
+                                +91 70543 52288
                             </a>
                         </motion.div>
                     </div>

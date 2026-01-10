@@ -263,24 +263,7 @@ const menuItems = [
     },
 
     // ================= RICE =================
-    {
-        id: "27",
-        name: "Plain Rice",
-        description: "Steamed basmati rice, light and fluffy.",
-        category: "Rice",
-        price: 90,
-        image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=800&auto=format&fit=crop",
-        rating: 4.5,
-    },
-    {
-        id: "28",
-        name: "Jeera Rice",
-        description: "Basmati rice tempered with cumin seeds for aroma.",
-        category: "Rice",
-        price: 100,
-        image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=800&auto=format&fit=crop",
-        rating: 4.7,
-    },
+
 
     // ================= THALI =================
     {
@@ -309,7 +292,7 @@ const menuItems = [
         description: "Slow-cooked chickpea curry with rich spices.",
         category: "Sides & Dal",
         price: 180,
-        image: "https://images.unsplash.com/photo-1585937421612-70a008356f36?q=80&w=800&auto=format&fit=crop",
+        image: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Chole_ANM05417%20(1).jpg?raw=true",
         rating: 4.8,
     },
     {
@@ -363,7 +346,7 @@ const menuItems = [
         description: "Lightly spiced potatoes tossed with cumin seeds.",
         category: "Sides & Dal",
         price: 180,
-        image: "https://images.unsplash.com/photo-1585937421612-70a008356f36?q=80&w=800&auto=format&fit=crop",
+        image: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Jeera%20Aloo%20(6)%20(1).jpg?raw=true",
         rating: 4.5,
     },
     {
@@ -381,7 +364,7 @@ const menuItems = [
         description: "Fresh curd seasoned with spices for a cooling side.",
         category: "Sides & Dal",
         price: 40,
-        image: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Raita.jpg?raw=true",
+        image: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Raita%20(1)%20(1).jpg?raw=true",
         rating: 4.7,
     },
 
@@ -392,7 +375,7 @@ const menuItems = [
         description: "Refreshing spiced buttermilk served chilled.",
         category: "Beverages",
         price: 30,
-        image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=800&auto=format&fit=crop",
+        image: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/chach_ANM05515.jpg?raw=true",
         rating: 4.9,
     },
     {
@@ -401,7 +384,7 @@ const menuItems = [
         description: "Thick, creamy sweet lassi with a smooth finish.",
         category: "Beverages",
         price: 70,
-        image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=800&auto=format&fit=crop",
+        image: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/lassi_ANM05513%20(1).jpg?raw=true",
         rating: 5.0,
     },
     {
@@ -410,7 +393,7 @@ const menuItems = [
         description: "Soft milk-solid dumplings soaked in sugar syrup.",
         category: "Desserts",
         price: 30,
-        image: "https://images.unsplash.com/photo-1517244683847-7456b63c5969?q=80&w=800&auto=format&fit=crop",
+        image: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/ANM05527.jpg?raw=true",
         rating: 5.0,
     },
     {
@@ -419,25 +402,16 @@ const menuItems = [
         description: "Flavorful curd preparation with spices and herbs.",
         category: "Sides & Dal",
         price: 40,
-        image: "https://images.unsplash.com/photo-1585937421612-70a008356f36?q=80&w=800&auto=format&fit=crop",
+        image: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Raita.jpg?raw=true",
         rating: 4.7,
     },
     {
         id: "44",
-        name: "Sarso Ka Saag",
-        description: "A flavorful green Sabji made with fresh herbs and spices.",
+        name: "Sarso Ka Saag Makke Di Roti",
+        description: "A flavorful green Sabji made with fresh herbs and spices with Makke Di Roti.",
         category: "Season Special",
-        price: 40,
-        image: "https://images.unsplash.com/photo-1585937421612-70a008356f36?q=80&w=800&auto=format&fit=crop",
-        rating: 4.7,
-    },
-    {
-        id: "45",
-        name: "Makke Ki Roti",
-        description: "Season special bread made with whole wheat flour.",
-        category: "Season Special",
-        price: 40,
-        image: "https://images.unsplash.com/photo-1585937421612-70a008356f36?q=80&w=800&auto=format&fit=crop",
+        price: 280,
+        image: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/ANM05257%20(1)%20(1).jpg?raw=true",
         rating: 4.7,
     },
 ];

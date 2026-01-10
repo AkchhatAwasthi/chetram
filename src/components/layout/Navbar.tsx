@@ -77,7 +77,7 @@ export default function Navbar() {
                     {/* DESKTOP CTA */}
                     <div className="hidden md:flex items-center gap-4">
                         <a
-                            href="tel:+919876543210"
+                            href="tel:+917054352288"
                             className="flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-full font-semibold transition-colors"
                         >
                             <Phone size={16} />
@@ -126,11 +126,11 @@ export default function Navbar() {
 
                             <div className="flex flex-col gap-4 mt-4">
                                 <a
-                                    href="tel:+919876543210"
+                                    href="tel:+917054352288"
                                     className="flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-full font-semibold transition-colors"
                                 >
                                     <Phone size={20} />
-                                    Call: 987 654 3210
+                                    Call: 70543 52288
                                 </a>
                             </div>
                         </div>

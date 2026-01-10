@@ -7,11 +7,12 @@ import ScrollReveal from "@/components/animations/ScrollReveal";
 
 const outlets = [
     {
-        name: "Aashiana Outlet",
-        address: "Power House Chauraha, Sector H, Aashiana, Lucknow",
-        phone: "+91 98765 43210",
-        timing: "9:00 AM - 10:00 PM",
+        name: "Ashiana Outlet",
+        address: "Quila Road, Near Power House Chauraha, Opposite Ashiana Kotwali, Sector K, Ashiana, Lucknow, UP- 226012",
+        phone: "+91 70543 52288",
+        timing: "7:30 AM - 11:00 PM",
         specialTiming: "Open All Days",
+        mapLink: "https://maps.app.goo.gl/Lw63W3ANbmRk73rY6",
     },
 ];
 
@@ -23,11 +24,11 @@ export default function OutletsTimings() {
                     <div className="text-center mb-16">
                         <span className="text-accent font-bold tracking-widest uppercase text-sm mb-2 block">Visit Us</span>
                         <h2 className="text-4xl md:text-5xl font-bold text-text-dark mb-4">
-                            Our Outlets & <span className="text-primary">Timings</span>
+                            Our Outlet & <span className="text-primary">Timings</span>
                         </h2>
                         <div className="h-1 w-20 bg-accent mt-4 rounded-full mx-auto" />
                         <p className="text-text-muted text-lg mt-4">
-                            Visit us at any of our convenient locations across Lucknow
+                            Visit us at our location in Ashiana, Lucknow
                         </p>
                     </div>
                 </ScrollReveal>

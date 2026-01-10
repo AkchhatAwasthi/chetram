@@ -34,7 +34,7 @@ export default function OrderVisit() {
                         transition={{ delay: 0.1 }}
                         className="text-text-dark/80 text-lg max-w-2xl mx-auto"
                     >
-                        Visit our outlets or call us to place your order
+                        Visit our outlet or call us to place your order
                     </motion.p>
                     <div className="h-1 w-20 bg-primary mt-4 rounded-full mx-auto" />
                 </div>
@@ -53,7 +53,7 @@ export default function OrderVisit() {
                             <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                                 <MapPin size={32} />
                             </div>
-                            <h3 className="text-2xl font-bold mb-2">Find Our Outlets</h3>
+                            <h3 className="text-2xl font-bold mb-2">Find Our Outlet</h3>
                             <p className="text-white/90">Visit us for dine-in experience</p>
                         </Link>
                     </motion.div>
@@ -65,7 +65,7 @@ export default function OrderVisit() {
                         transition={{ delay: 0.3 }}
                     >
                         <a
-                            href="tel:+919876543210"
+                            href="tel:+917054352288"
                             className="block bg-white hover:bg-background text-text-dark p-8 rounded-2xl text-center transition-all duration-300 shadow-lg hover:shadow-2xl hover:-translate-y-1 group"
                         >
                             <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">

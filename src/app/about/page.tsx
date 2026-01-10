@@ -6,7 +6,7 @@ import OurJourney from "@/components/about/OurJourney";
 
 export const metadata = {
     title: "About Us - Chetram | Authentic Delhi-Style Food in Lucknow",
-    description: "Discover the story behind Chetram, Lucknow's favorite destination for authentic Delhi-style Chole Bhature and Chur Chur Naan. Learn about our mission, values, and journey since 2010.",
+    description: "Discover the story behind Chetram, Lucknow's favorite destination for authentic Delhi-style Chole Bhature and Chur Chur Naan. Learn about our mission, values, and journey since 2022.",
 };
 
 export default function AboutPage() {

@@ -65,13 +65,19 @@ export default function Footer() {
                     <div>
                         <h3 className="text-lg font-bold text-primary mb-6">Our Outlet</h3>
                         <div className="space-y-3">
-                            <Link href="/contact" className="text-text-dark/80 hover:text-primary transition-colors text-sm flex items-center gap-2">
+                            <a
+                                href="https://maps.app.goo.gl/Lw63W3ANbmRk73rY6"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-text-dark/80 hover:text-primary transition-colors text-sm flex items-center gap-2"
+                            >
                                 <MapPin size={14} className="text-primary" />
-                                Aashiana, Lucknow
-                            </Link>
+                                Ashiana, Lucknow
+                            </a>
                             <p className="text-text-dark/60 text-sm pl-6">
-                                Power House Chauraha,<br />
-                                Sector H, Aashiana
+                                Quila Road, Near Power House Chauraha,<br />
+                                Opposite Ashiana Kotwali, Sector K,<br />
+                                Ashiana, Lucknow, UP- 226012
                             </p>
                         </div>
                     </div>
@@ -84,14 +90,14 @@ export default function Footer() {
                                 <Phone size={20} className="text-primary mt-1" />
                                 <div>
                                     <p className="text-sm font-bold text-text-dark">Call Us</p>
-                                    <p className="text-sm text-text-dark/80">+91 987 654 3210</p>
+                                    <a href="tel:+917054352288" className="text-sm text-text-dark/80 hover:text-primary transition-colors">+91 70543 52288</a>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">
                                 <Mail size={20} className="text-primary mt-1" />
                                 <div>
                                     <p className="text-sm font-bold text-text-dark">Email Us</p>
-                                    <p className="text-sm text-text-dark/80">hello@chetram.com</p>
+                                    <a href="mailto:chetrambhature@gmail.com" className="text-sm text-text-dark/80 hover:text-primary transition-colors">chetrambhature@gmail.com</a>
                                 </div>
                             </li>
                         </ul>

@@ -54,7 +54,7 @@ export default function MeetTheFounder() {
                                 {/* Name & Title */}
                                 <div>
                                     <h4 className="text-3xl font-bold text-text-dark mb-2">
-                                        Rajesh Kumar Sharma
+                                        Punit Kumar Agarwal
                                     </h4>
                                     <p className="text-primary font-semibold text-lg">
                                         Founder & Chief Culinary Visionary
@@ -64,16 +64,16 @@ export default function MeetTheFounder() {
                                 {/* Personal Message */}
                                 <div className="space-y-4 text-text-muted text-lg leading-relaxed">
                                     <p>
-                                        "Growing up in Delhi, I was surrounded by the incredible flavors of street food—the crispy bhature, the aromatic chole, the perfectly charred naan. When I moved to Lucknow, I realized something was missing."
+                                        "Growing up in Delhi, I was surrounded by the incredible flavors of street food—the crispy bhature, the aromatic chole, the perfectly charred naan. When I came to Lucknow, I realized something was missing."
                                     </p>
                                     <p>
-                                        "I wanted to bring that authentic Delhi experience to this beautiful city, but with one crucial difference: uncompromising hygiene and quality. That's how Chetram was born in 2010."
+                                        "I wanted to bring that authentic Delhi experience to this beautiful city, but with one crucial difference: uncompromising hygiene and quality. That's how Chetram was born in 2022."
                                     </p>
                                     <p>
-                                        "What started as a small outlet in Aashiana has now grown into a family of 5 locations, but our mission remains the same—to serve food that makes people happy, brings families together, and creates memories that last a lifetime."
+                                        "In just a few years, what started as a small dream in Ashiana has become a beloved destination for food lovers across Lucknow. As we complete 4 years in February 2026, our mission remains the same—to serve food that makes people happy, brings families together, and creates memories that last a lifetime."
                                     </p>
                                     <p className="font-semibold text-text-dark italic">
-                                        "Every customer who walks through our doors is not just a guest, but a part of the Chetram family. Your trust and love have been the foundation of our journey."
+                                        "Every customer who walks through our doors is not just a guest, but a part of the Chetram family. Your trust and love have been the foundation of our journey, and we're just getting started."
                                     </p>
                                 </div>
 
@@ -99,7 +99,7 @@ export default function MeetTheFounder() {
                     <ScrollReveal delay={0.4}>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
                             <div className="bg-white p-6 rounded-xl text-center border border-primary/20 shadow-md">
-                                <div className="text-3xl font-bold text-primary mb-2">2010</div>
+                                <div className="text-3xl font-bold text-primary mb-2">2022</div>
                                 <div className="text-sm text-text-muted">Journey Started</div>
                             </div>
                             <div className="bg-white p-6 rounded-xl text-center border border-primary/20 shadow-md">

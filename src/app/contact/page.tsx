@@ -12,7 +12,7 @@ export default function ContactPage() {
                     <div className="h-1 w-20 bg-primary mt-4 rounded-full mx-auto mb-4" />
                     <p className="text-text-muted max-w-2xl mx-auto">
                         Have a question or want to book a party order? We'd love to hear from you.
-                        Reach out to us using the form below or visit one of our outlets.
+                        Reach out to us using the form below or visit our outlet.
                     </p>
                 </div>
 
@@ -28,8 +28,7 @@ export default function ContactPage() {
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-lg text-text-dark">Phone Number</h4>
-                                    <p className="text-text-dark/80">+91 987 654 3210 (Main)</p>
-                                    <p className="text-text-dark/80">+91 987 654 3211 (Catering)</p>
+                                    <a href="tel:+917054352288" className="text-text-dark/80 hover:text-primary transition-colors">+91 70543 52288</a>
                                 </div>
                             </div>
 
@@ -39,8 +38,7 @@ export default function ContactPage() {
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-lg text-text-dark">Email Address</h4>
-                                    <p className="text-text-dark/80">hello@chetram.com</p>
-                                    <p className="text-text-dark/80">catering@chetram.com</p>
+                                    <a href="mailto:chetrambhature@gmail.com" className="text-text-dark/80 hover:text-primary transition-colors">chetrambhature@gmail.com</a>
                                 </div>
                             </div>
 
@@ -51,7 +49,7 @@ export default function ContactPage() {
                                 <div>
                                     <h4 className="font-bold text-lg text-text-dark">Operating Hours</h4>
                                     <p className="text-text-dark/80">Monday - Sunday</p>
-                                    <p className="text-text-dark/80">9:00 AM - 10:00 PM</p>
+                                    <p className="text-text-dark/80">7:30 AM - 11:00 PM</p>
                                 </div>
                             </div>
 
@@ -60,11 +58,11 @@ export default function ContactPage() {
                                     <MapPin size={24} />
                                 </div>
                                 <div>
-                                    <h4 className="font-bold text-lg text-text-dark">Head Office</h4>
+                                    <h4 className="font-bold text-lg text-text-dark">Our Location</h4>
                                     <p className="text-text-dark/80">
-                                        Power House Chauraha,<br />
-                                        Sector H, Aashiana,<br />
-                                        Lucknow, Uttar Pradesh 226012
+                                        Quila Road, Near Power House Chauraha,<br />
+                                        Opposite Ashiana Kotwali, Sector K,<br />
+                                        Ashiana, Lucknow, UP- 226012
                                     </p>
                                 </div>
                             </div>
@@ -140,10 +138,10 @@ export default function ContactPage() {
                 <div className="mt-20">
                     <div className="text-center mb-12">
                         <span className="text-primary font-bold tracking-widest uppercase text-sm mb-2 block">Find Us</span>
-                        <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-4">Our <span className="text-accent">Locations</span></h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-4">Our <span className="text-accent">Location</span></h2>
                         <div className="h-1 w-20 bg-primary mt-4 rounded-full mx-auto mb-4" />
                         <p className="text-text-muted max-w-2xl mx-auto">
-                            Visit us at our outlet in Aashiana, Lucknow. Open daily from 9:00 AM to 10:00 PM.
+                            Visit us at our outlet in Ashiana, Lucknow. Open daily from 7:30 AM to 11:00 PM.
                         </p>
                     </div>
 
@@ -154,43 +152,51 @@ export default function ContactPage() {
                                 className="bg-white p-6 rounded-xl shadow-sm border border-primary/20 hover:border-accent transition-all cursor-pointer group"
                             >
                                 <div className="flex justify-between items-start mb-2">
-                                    <h3 className="font-bold text-lg text-text-dark group-hover:text-primary transition-colors">Chetram Aashiana</h3>
+                                    <h3 className="font-bold text-lg text-text-dark group-hover:text-primary transition-colors">Chetram Ashiana</h3>
                                     <MapPin size={20} className="text-primary group-hover:text-accent" />
                                 </div>
-                                <p className="text-sm text-text-muted mb-4">Near Power House Chauraha, Bank of Baroda, Sector H, Aashiana, Lucknow</p>
+                                <p className="text-sm text-text-muted mb-4">Quila Road, Near Power House Chauraha, Opposite Ashiana Kotwali, Sector K, Ashiana, Lucknow, UP- 226012</p>
 
                                 <div className="flex flex-col gap-2 text-sm text-text-muted">
                                     <div className="flex items-center gap-2">
-                                        <Phone size={14} className="text-primary" /> +91 987 654 3210
+                                        <Phone size={14} className="text-primary" /> +91 70543 52288
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <Clock size={14} className="text-primary" /> 9:00 AM - 10:00 PM
+                                        <Clock size={14} className="text-primary" /> 7:30 AM - 11:00 PM
                                     </div>
                                 </div>
 
                                 <div className="mt-4 pt-4 border-t border-primary/10 flex gap-2">
                                     <a
-                                        href="tel:+919876543210"
+                                        href="tel:+917054352288"
                                         className="flex-1 bg-background hover:bg-accent/30 text-text-dark py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-2"
                                     >
                                         <Phone size={14} /> Call
                                     </a>
-                                    <button className="flex-1 bg-primary hover:bg-primary-dark text-white py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-2">
+                                    <a
+                                        href="https://maps.app.goo.gl/Lw63W3ANbmRk73rY6"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex-1 bg-primary hover:bg-primary-dark text-white py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-2"
+                                    >
                                         <MapPin size={14} /> Direction
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
-                        {/* Map Placeholder */}
+                        {/* Google Maps Embed */}
                         <div className="w-full lg:w-2/3 bg-accent/20 rounded-2xl overflow-hidden relative min-h-[400px] lg:min-h-[600px] border-2 border-primary/20">
-                            <div className="absolute inset-0 flex items-center justify-center bg-accent/10">
-                                <div className="text-center text-text-muted">
-                                    <MapPin size={48} className="mx-auto mb-2 text-primary opacity-50" />
-                                    <p className="font-bold text-text-dark">Google Maps Integration</p>
-                                    <p className="text-sm">API Key Required for Display</p>
-                                </div>
-                            </div>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.9127!2d80.9481!3d26.7893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd991f32b16b%3A0x93ccba8909978be7!2sGoogle%20Maps!5e0!3m2!1sen!2sin!4v1234567890"
+                                width="100%"
+                                height="100%"
+                                style={{ border: 0, position: 'absolute', top: 0, left: 0 }}
+                                allowFullScreen
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                title="Chetram Ashiana Location"
+                            ></iframe>
                         </div>
                     </div>
                 </div>

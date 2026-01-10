@@ -12,7 +12,7 @@ const differentiators = [
     },
     {
         title: "Consistent Taste, Every Time",
-        description: "Our secret? Standardized recipes, trained chefs, and quality checks that ensure the same great taste at every outlet.",
+        description: "Our secret? Standardized recipes, trained chefs, and quality checks that ensure the same great taste every single time.",
     },
     {
         title: "100% Vegetarian & Pure",
@@ -20,7 +20,7 @@ const differentiators = [
     },
     {
         title: "Eco-Friendly Practices",
-        description: "We use CHUK compostable plates and maintain a zero-plastic policy across all outlets.",
+        description: "We use CHUK compostable plates and maintain a zero-plastic policy at our outlet.",
     },
     {
         title: "Family-Friendly Atmosphere",

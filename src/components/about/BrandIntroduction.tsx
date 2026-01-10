@@ -27,7 +27,7 @@ export default function BrandIntroduction() {
                         <div className="space-y-6">
                             <div>
                                 <span className="inline-block px-4 py-2 bg-primary text-white font-bold text-sm rounded-full mb-4">
-                                    🌶️ Est. 2010 • Lucknow
+                                    🌶️ Est. 2022 • Lucknow
                                 </span>
                                 <h1 className="text-4xl md:text-5xl font-bold text-text-dark mb-4">
                                     A Legacy Built on <span className="text-accent">Authentic Taste</span>
@@ -56,15 +56,15 @@ export default function BrandIntroduction() {
                                 className="grid grid-cols-3 gap-6 pt-8 border-t border-primary/20"
                             >
                                 <div className="text-center">
-                                    <div className="text-3xl md:text-4xl font-bold text-accent mb-1">14+</div>
+                                    <div className="text-3xl md:text-4xl font-bold text-accent mb-1">14</div>
                                     <div className="text-sm text-text-muted">Years of Excellence</div>
                                 </div>
                                 <div className="text-center">
-                                    <div className="text-3xl md:text-4xl font-bold text-accent mb-1">5</div>
-                                    <div className="text-sm text-text-muted">Outlets Across City</div>
+                                    <div className="text-3xl md:text-4xl font-bold text-accent mb-1">1</div>
+                                    <div className="text-sm text-text-muted">Outlet in Ashiana</div>
                                 </div>
                                 <div className="text-center">
-                                    <div className="text-3xl md:text-4xl font-bold text-accent mb-1">50K+</div>
+                                    <div className="text-3xl md:text-4xl font-bold text-accent mb-1">100K+</div>
                                     <div className="text-sm text-text-muted">Happy Customers</div>
                                 </div>
                             </motion.div>
