@@ -22,10 +22,10 @@ export default function OurStory() {
                             </p>
                             <div className="space-y-4 text-text-muted text-lg leading-relaxed">
                                 <p>
-                                    What started as a small setup with a passion for authentic Delhi-style food has grown into a beloved chain across Lucknow.
+                                    What started as a small setup with a passion for authentic Delhi-style food has grown into Lucknow's beloved destination for genuine taste at our Ashiana outlet.
                                 </p>
                                 <p>
-                                    From our first outlet to multiple locations today, we've stayed true to our roots—serving the same authentic recipes, maintaining unwavering quality, and treating every customer like family.
+                                    Since 2022, we've stayed true to our roots—serving authentic recipes, maintaining unwavering quality, and treating every customer like family.
                                 </p>
                                 <p>
                                     Our journey is built on consistency, taste, and the trust of thousands who choose Chetram every day.
