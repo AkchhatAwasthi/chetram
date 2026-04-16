@@ -3,7 +3,7 @@ import Script from "next/script";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best Chur Chur Naan in Lucknow | Chetram Restaurant",
+  title: "Best Chur Chur Naan in Lucknow",
   description:
     "Craving the Best Chur Chur Naan in Lucknow? Chetram Restaurant in Ashiana serves authentic, crispy, layered Chur Chur Naan loaded with flavor. Visit us today!",
   keywords: [
@@ -69,8 +69,7 @@ const faqSchema = {
 export default function BestChurChurNaanPage() {
   return (
     <>
-      <Script
-        id="faq-schema-naan"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
@@ -92,10 +91,10 @@ export default function BestChurChurNaanPage() {
           <div className="bg-white rounded-2xl p-8 md:p-12 shadow-xl border border-accent/20 mb-12">
             <div className="mb-8 overflow-hidden rounded-xl h-64 md:h-[500px] relative">
               <img 
-                src="https://github.com/AkchhatAwasthi/chetramimages/blob/main/Mix%20Chur%20Chur%20Naan.jpg?raw=true" 
+                src="/images/seo/mix-chur-chur.jpg" 
                 alt="Famous Chur Chur Naan in Lucknow, crushed and served with creamy Dal Makhani" 
-                loading="lazy"
-                decoding="async"
+                loading="eager"
+                decoding="sync"
                 width={1200}
                 height={800}
                 className="w-full h-full object-cover"
@@ -117,6 +116,19 @@ export default function BestChurChurNaanPage() {
             <div className="bg-neutral-cream p-6 rounded-xl my-10 border-l-4 border-accent">
               <h3 className="text-2xl font-bold text-text-dark mb-4">The Complete Thali Experience</h3>
               <p className="mb-4 text-text-muted">You do not just order a flatbread—you partake in a royal feast. Every plate of our Chur Chur Naan is accompanied by an orchestra of classic side dishes designed to perfectly counterbalance the crispy richness of the bread:</p>
+              
+              <div className="my-6 overflow-hidden rounded-xl h-48 md:h-[350px] relative">
+                 <img 
+                   src="/images/seo/naan-thali.jpg" 
+                   alt="Chur Chur Naan served as a complete thali with Dal Makhani and Shahi Paneer" 
+                   loading="lazy"
+                   decoding="async"
+                   width={1200}
+                   height={800}
+                   className="w-full h-full object-cover"
+                 />
+              </div>
+
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <span className="text-accent text-xl mr-3 font-bold">1.</span>

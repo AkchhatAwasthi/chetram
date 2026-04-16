@@ -3,7 +3,7 @@ import Script from "next/script";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best Chole Bhature in Lucknow | Chetram Restaurant",
+  title: "Best Chole Bhature in Lucknow",
   description:
     "Looking for the best Chole Bhature in Lucknow? Visit Chetram in Ashiana for authentic, spicy Pindi Chole and soft, fluffy Bhature. Experience true North Indian flavors!",
   keywords: [
@@ -69,8 +69,7 @@ const faqSchema = {
 export default function BestCholeBhaturePage() {
   return (
     <>
-      <Script
-        id="faq-schema-chole"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
@@ -92,10 +91,10 @@ export default function BestCholeBhaturePage() {
           <div className="bg-white rounded-2xl p-8 md:p-12 shadow-xl border border-accent/20 mb-12">
             <div className="mb-8 overflow-hidden rounded-xl h-64 md:h-[500px] relative">
               <img 
-                src="https://github.com/AkchhatAwasthi/upscalers-images/blob/main/bhature_with_raita_ANM05297-Edit%20(1).jpg?raw=true" 
+                src="/images/seo/chole-bhature-main.jpg" 
                 alt="Delicious Best Chole Bhature in Lucknow served with raw onions and spicy pickle" 
-                loading="lazy"
-                decoding="async"
+                loading="eager"
+                decoding="sync"
                 width={1200}
                 height={800}
                 className="w-full h-full object-cover"
@@ -144,6 +143,19 @@ export default function BestCholeBhaturePage() {
               <p>
                 To understand why finding the <strong>best Chole Bhature in Lucknow</strong> is such a passionate quest for locals, one must trace the dish back to its Northern roots in the Rawalpindi region of pre-partition India. While standard North Indian curries rely heavily on onion-tomato gravies, authentic 'Pindi' style completely revolutionizes the approach. It utilizes a dry-roasted masala base without typical turmeric or heavy tomato purees, ensuring the natural nuttiness of the chickpeas is the star of the show. 
               </p>
+              
+              <div className="my-8 overflow-hidden rounded-xl h-48 md:h-[400px] relative">
+                <img 
+                  src="/images/seo/mix-chur-chur.jpg" 
+                  alt="A glimpse of our delicious North Indian feast at Chetram" 
+                  loading="lazy"
+                  decoding="async"
+                  width={1200}
+                  height={800}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
               <p>
                 Over the decades, as this exquisite breakfast-slash-lunch heavyweight migrated across the subcontinent, various cities added their cultural spin. At Chetram, we have respected the rugged, deeply spiced 'Pindi' authenticity while calibrating the spice levels to perfection for the legendary Lucknawi palate. We have bridged the gap between raw Punjabi Dhaba culture and the refined culinary appreciation of Lucknow.
               </p>
