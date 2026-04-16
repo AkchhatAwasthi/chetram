@@ -90,15 +90,15 @@ export const metadata: Metadata = {
     images: ["/og-image.jpg"],
   },
   verification: {
-    google: "v34GdW5TlL5GrJ7rM89IOyK8zJ9Odkp1UyNH36V_vKQ",
+    google: [
+      "v34GdW5TlL5GrJ7rM89IOyK8zJ9Odkp1UyNH36V_vKQ",
+      "MudbV-MAqKEC8-OFES1DC1DOl6Xntfs_5YNPzVkHU_M"
+    ],
   },
   icons: {
     icon: "/logo.png",
     shortcut: "/logo.png",
     apple: "/logo.png",
-  },
-  verification: {
-    google: "MudbV-MAqKEC8-OFES1DC1DOl6Xntfs_5YNPzVkHU_M",
   },
 };
 
