@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/"],
       },
     ],
-    sitemap: "https://www.chetram.in/sitemap.xml",
-    host: "https://www.chetram.in",
+    sitemap: "https://chetrampindichole.com/sitemap.xml",
+    host: "https://chetrampindichole.com",
   };
 }

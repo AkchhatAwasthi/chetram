@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     "Chetram restaurant images",
   ],
   alternates: {
-    canonical: "https://www.chetram.in/gallery",
+    canonical: "https://chetrampindichole.com/gallery",
   },
   openGraph: {
     title: "Photo Gallery | Chetram Restaurant, Lucknow",
     description:
       "Browse photos of Chetram's dishes - Chur Chur Naan, Kulche, Chole Bhature & more.",
-    url: "https://www.chetram.in/gallery",
+    url: "https://chetrampindichole.com/gallery",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
   },
   twitter: {

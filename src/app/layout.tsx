@@ -150,6 +150,37 @@ const localBusinessSchema = {
   areaServed: "Lucknow, Uttar Pradesh, India",
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": siteUrl
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Menu",
+      "item": `${siteUrl}/menu`
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "About",
+      "item": `${siteUrl}/about`
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Contact",
+      "item": `${siteUrl}/contact`
+    }
+  ]
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -163,6 +194,13 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(localBusinessSchema),
+          }}
+        />
+        <Script
+          id="breadcrumb-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema),
           }}
         />
       </head>

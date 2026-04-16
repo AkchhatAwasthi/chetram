@@ -19,12 +19,12 @@ export const metadata = {
         "Chetram 2022",
     ],
     alternates: {
-        canonical: "https://www.chetram.in/about",
+        canonical: "https://chetrampindichole.com/about",
     },
     openGraph: {
         title: "About Chetram | Lucknow's Authentic North Indian Restaurant",
         description: "Discover the story behind Chetram - Lucknow's favorite destination for authentic Delhi-style Chole Bhature and Chur Chur Naan since 2022.",
-        url: "https://www.chetram.in/about",
+        url: "https://chetrampindichole.com/about",
         images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
     },
     twitter: {

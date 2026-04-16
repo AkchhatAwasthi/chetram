@@ -8,9 +8,9 @@ export default function Footer() {
     return (
         <footer className="bg-accent text-text-dark pt-16 pb-8">
             <div className="container mx-auto px-4 md:px-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 mb-12">
                     {/* Brand Column */}
-                    <div className="space-y-4">
+                    <div className="space-y-4 lg:col-span-2">
                         <Link href="/" className="flex items-center gap-3 group">
                             <div className="relative w-24 h-24">
                                 <Image
@@ -58,6 +58,23 @@ export default function Footer() {
                                     </Link>
                                 </li>
                             ))}
+                        </ul>
+                    </div>
+
+                    {/* SEO Links */}
+                    <div>
+                        <h3 className="text-lg font-bold text-primary mb-6">Our Specialties</h3>
+                        <ul className="space-y-3">
+                            <li>
+                                <Link href="/best-chole-bhature-in-lucknow" className="text-text-dark/80 hover:text-primary transition-colors text-sm">
+                                    Best Chole Bhature in Lucknow
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/best-chur-chur-naan-in-lucknow" className="text-text-dark/80 hover:text-primary transition-colors text-sm">
+                                    Best Chur Chur Naan in Lucknow
+                                </Link>
+                            </li>
                         </ul>
                     </div>
 

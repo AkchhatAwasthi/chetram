@@ -59,7 +59,7 @@ export default function GalleryPage() {
                             className="break-inside-avoid rounded-xl overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
                             onClick={() => setSelectedImage(image.src)}
                         >
-                            <img src={image.src} alt={image.alt} className="w-full h-auto object-cover" />
+                            <img src={image.src} alt={image.alt} loading="lazy" decoding="async" width={600} height={400} className="w-full h-auto object-cover" />
                         </div>
                     ))}
                 </div>
@@ -80,6 +80,10 @@ export default function GalleryPage() {
                     <img
                         src={selectedImage}
                         alt="Full screen view"
+                        loading="lazy"
+                        decoding="async"
+                        width={1200}
+                        height={800}
                         className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
                     />
                 </div>

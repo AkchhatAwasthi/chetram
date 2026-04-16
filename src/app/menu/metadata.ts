@@ -20,13 +20,13 @@ export const metadata: Metadata = {
     "restaurant menu Lucknow",
   ],
   alternates: {
-    canonical: "https://www.chetram.in/menu",
+    canonical: "https://chetrampindichole.com/menu",
   },
   openGraph: {
     title: "Menu | Chetram - Authentic North Indian Food Lucknow",
     description:
       "Explore Chetram's full menu featuring Chur Chur Naan, Pindi Chole Bhature, Dal Makhani, Kulche, Thalis & more.",
-    url: "https://www.chetram.in/menu",
+    url: "https://chetrampindichole.com/menu",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
   },
   twitter: {

@@ -21,6 +21,10 @@ export default function Hero() {
                 <img
                     src={heroImages.desktop}
                     alt="Delicious North Indian Food Spread"
+                    fetchPriority="high"
+                    decoding="sync"
+                    width={1920}
+                    height={1080}
                     className="hidden md:block w-full h-full object-cover opacity-80"
                 />
 
@@ -28,6 +32,10 @@ export default function Hero() {
                 <img
                     src={heroImages.mobile}
                     alt="Delicious North Indian Food Spread"
+                    fetchPriority="high"
+                    decoding="sync"
+                    width={1080}
+                    height={1920}
                     className="block md:hidden w-full h-full object-cover object-center opacity-80"
                 />
             </div>

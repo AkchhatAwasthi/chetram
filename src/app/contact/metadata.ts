@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     "restaurant near me Lucknow Ashiana",
   ],
   alternates: {
-    canonical: "https://www.chetram.in/contact",
+    canonical: "https://chetrampindichole.com/contact",
   },
   openGraph: {
     title: "Contact Us | Chetram - Ashiana, Lucknow",
     description:
       "Visit Chetram at Quila Road, Ashiana, Lucknow. Open daily 7:30 AM - 11:00 PM. Call +91 70543 52288.",
-    url: "https://www.chetram.in/contact",
+    url: "https://chetrampindichole.com/contact",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
   },
   twitter: {
