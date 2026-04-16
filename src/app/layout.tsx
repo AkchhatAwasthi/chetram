@@ -24,7 +24,7 @@ const playfair = Playfair_Display({
   variable: "--font-playfair",
 });
 
-const siteUrl = "https://www.chetram.in";
+const siteUrl = "https://chetrampindichole.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
