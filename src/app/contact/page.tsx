@@ -1,5 +1,6 @@
 "use client";
 
+
 import { Mail, Phone, MapPin, Clock, Send } from "lucide-react";
 
 export default function ContactPage() {

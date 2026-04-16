@@ -1,17 +1,42 @@
 "use client";
 
+
 import { useState } from "react";
 import { X } from "lucide-react";
 
 const galleryImages = [
-    "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Aloo%20Chur%20Chur%20Naan%20(1).jpg?raw=true",
-    "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Aloo%20Pyaz%20Chur%20Chur%20Naan.jpg?raw=true",
-    "https://github.com/AkchhatAwasthi/upscalers-images/blob/main/bhature_with_raita_ANM05297-Edit%20(1).jpg?raw=true",
-    "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Gobhi%20Chur%20Chur%20Kulcha%20(1%20pc)%20jpg.jpg?raw=true",
-    "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Chur%20Chur%20Naan%20with%20Dal%20Makhani%20+%20Shahi%20Paneer%20+%20Raita2_.jpg?raw=true",
-    "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Gobhi%20Pyaz%20Chur%20Chur%20Kulcha.jpg?raw=true",
-    "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Makke%20ki%20Roti.jpg?raw=true",
-    "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Mix%20Chur%20Chur%20Kulcha.jpg?raw=true",
+    {
+        src: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Aloo%20Chur%20Chur%20Naan%20(1).jpg?raw=true",
+        alt: "Aloo Chur Chur Naan at Chetram Restaurant Lucknow",
+    },
+    {
+        src: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Aloo%20Pyaz%20Chur%20Chur%20Naan.jpg?raw=true",
+        alt: "Aloo Pyaz Chur Chur Naan - Chetram Ashiana Lucknow",
+    },
+    {
+        src: "https://github.com/AkchhatAwasthi/upscalers-images/blob/main/bhature_with_raita_ANM05297-Edit%20(1).jpg?raw=true",
+        alt: "Pindi Chole Bhature with Raita at Chetram Restaurant",
+    },
+    {
+        src: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Gobhi%20Chur%20Chur%20Kulcha%20(1%20pc)%20jpg.jpg?raw=true",
+        alt: "Gobhi Chur Chur Kulcha - Authentic North Indian Kulche in Lucknow",
+    },
+    {
+        src: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Chur%20Chur%20Naan%20with%20Dal%20Makhani%20+%20Shahi%20Paneer%20+%20Raita2_.jpg?raw=true",
+        alt: "Chur Chur Naan with Dal Makhani, Shahi Paneer and Raita - Chetram Special",
+    },
+    {
+        src: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Gobhi%20Pyaz%20Chur%20Chur%20Kulcha.jpg?raw=true",
+        alt: "Gobhi Pyaz Chur Chur Kulcha at Chetram Lucknow",
+    },
+    {
+        src: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Makke%20ki%20Roti.jpg?raw=true",
+        alt: "Makke ki Roti at Chetram - Seasonal Special Lucknow",
+    },
+    {
+        src: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Mix%20Chur%20Chur%20Kulcha.jpg?raw=true",
+        alt: "Mix Chur Chur Kulcha - Chetram Signature Dish Lucknow",
+    },
 ];
 
 export default function GalleryPage() {
@@ -28,13 +53,13 @@ export default function GalleryPage() {
                 </div>
 
                 <div className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4">
-                    {galleryImages.map((src, index) => (
+                    {galleryImages.map((image, index) => (
                         <div
                             key={index}
                             className="break-inside-avoid rounded-xl overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
-                            onClick={() => setSelectedImage(src)}
+                            onClick={() => setSelectedImage(image.src)}
                         >
-                            <img src={src} alt={`Gallery ${index + 1}`} className="w-full h-auto object-cover" />
+                            <img src={image.src} alt={image.alt} className="w-full h-auto object-cover" />
                         </div>
                     ))}
                 </div>

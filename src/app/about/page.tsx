@@ -5,8 +5,34 @@ import MeetTheFounder from "@/components/about/MeetTheFounder";
 import OurJourney from "@/components/about/OurJourney";
 
 export const metadata = {
-    title: "About Us - Chetram | Authentic Delhi-Style Food in Lucknow",
-    description: "Discover the story behind Chetram, Lucknow's favorite destination for authentic Delhi-style Chole Bhature and Chur Chur Naan. Learn about our mission, values, and journey since 2022.",
+    title: "About Us | Chetram - Lucknow's Authentic North Indian Restaurant Since 2022",
+    description: "Discover the story behind Chetram - Lucknow's favorite destination for authentic Delhi-style Chole Bhature and Chur Chur Naan since 2022. Learn about our mission, values, founder, and journey.",
+    keywords: [
+        "about Chetram",
+        "Chetram story",
+        "Chetram founder",
+        "Chetram history",
+        "authentic North Indian restaurant Lucknow",
+        "Delhi style food Lucknow",
+        "Chetram mission",
+        "best Chole Bhature Lucknow",
+        "Chetram 2022",
+    ],
+    alternates: {
+        canonical: "https://www.chetram.in/about",
+    },
+    openGraph: {
+        title: "About Chetram | Lucknow's Authentic North Indian Restaurant",
+        description: "Discover the story behind Chetram - Lucknow's favorite destination for authentic Delhi-style Chole Bhature and Chur Chur Naan since 2022.",
+        url: "https://www.chetram.in/about",
+        images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "About Chetram | Lucknow's Authentic North Indian Restaurant",
+        description: "Discover the story behind Chetram - Delhi-style Chole Bhature and Chur Chur Naan in Lucknow since 2022.",
+        images: ["/og-image.jpg"],
+    },
 };
 
 export default function AboutPage() {
