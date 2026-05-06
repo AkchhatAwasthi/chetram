@@ -24,6 +24,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/pindi-chole-bhature-lucknow`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/restaurant-in-ashiana-lucknow`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/menu`,
       lastModified: currentDate,
       changeFrequency: "weekly",
