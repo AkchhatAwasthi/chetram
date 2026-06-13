@@ -24,6 +24,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/best-chole-kulcha-combo-lucknow`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/best-chole-bhature-in-lucknow`,
       lastModified: currentDate,
       changeFrequency: "monthly",

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import ScrollReveal from "@/components/animations/ScrollReveal";
 
 const dishes = [
@@ -72,6 +73,12 @@ export default function SignatureDishes() {
                             <h3 className="text-xl font-bold text-text-dark text-center">{dish.name}</h3>
                         </motion.div>
                     ))}
+                </div>
+
+                <div className="mt-12 text-center">
+                    <p className="text-text-dark/80 text-lg font-medium">
+                        Craving a complete tandoori meal? Try our famous <Link href="/best-chole-kulcha-combo-lucknow" className="text-primary font-bold hover:underline">Best Chole Kulcha Combo in Lucknow</Link>!
+                    </p>
                 </div>
             </div>
         </section>

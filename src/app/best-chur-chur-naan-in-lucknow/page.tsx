@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -84,7 +83,7 @@ export default function BestChurChurNaanPage() {
             </h1>
             <div className="h-1 w-24 bg-accent mx-auto mb-6 rounded-full" />
             <p className="text-lg text-text-muted leading-relaxed">
-              Experience the satisfying crunch of Lucknow's most extravagantly loved <strong>Chur Chur Naan</strong>. At Chetram, we bypass ordinary street food to deliver an authentic, elevated Punjabi dhaba experience wrapped in perfectly layered, tandoor-baked breads. Prepare yourself for the ultimate North Indian feast!
+              Experience the satisfying crunch of Lucknow&apos;s most extravagantly loved <strong>Chur Chur Naan</strong>. At Chetram, we bypass ordinary street food to deliver an authentic, elevated Punjabi dhaba experience wrapped in perfectly layered, tandoor-baked breads. Prepare yourself for the ultimate North Indian feast!
             </p>
           </div>
 
@@ -102,11 +101,11 @@ export default function BestChurChurNaanPage() {
             </div>
             
             <h2 className="text-3xl font-bold text-text-dark mb-6">
-              What Defines True "Chur Chur" Naan?
+              What Defines True &quot;Chur Chur&quot; Naan?
             </h2>
             <div className="text-text-muted mb-8 leading-relaxed space-y-4">
               <p>
-                To genuinely claim the title of <strong>best Chur Chur Naan in Lucknow</strong>, one must completely understand the art of lamination. "Chur Chur" literally translates to "crushed into pieces." Unlike a standard paratha or naan, our dough rests for several hours. Our skilled bread masters then layer the dough infinitely with premium desi ghee, folding it over and over similar to puff pastry construction before stuffing it heavily with robust, zesty fillings.
+                To genuinely claim the title of <strong>best Chur Chur Naan in Lucknow</strong>, one must completely understand the art of lamination. &quot;Chur Chur&quot; literally translates to &quot;crushed into pieces.&quot; Unlike a standard paratha or naan, our dough rests for several hours. Our skilled bread masters then layer the dough infinitely with premium desi ghee, folding it over and over similar to puff pastry construction before stuffing it heavily with robust, zesty fillings.
               </p>
               <p>
                 The dramatically high heat of our traditional clay tandoors instantly locks the crispness into those layers while retaining the moistness of the seasoned potato, paneer, or mixed fillings inside. But the true magic happens seconds after it is pulled from the oven. Our chefs forcefully crush the roaring hot naan by hand. This violent but necessary action releases aromatic steam, absorbs the dollop of white butter we instantly place on top, and permanently separates the flaky golden layers to maximize the crunch factor in every bite.
@@ -173,7 +172,7 @@ export default function BestChurChurNaanPage() {
                 <div className="absolute -right-10 -top-10 bg-primary/10 w-32 h-32 rounded-full blur-2xl z-0"></div>
                 <div className="relative z-10">
                   <h3 className="text-xl font-bold text-text-dark mb-3">The Mix Chur Chur Naan</h3>
-                  <p className="text-text-muted">Our undisputed ultimate creation. When you can't decide, we combine paneer, aloo, and gobhi into one massive, explosive filling. Highly recommended for the hungriest foodies.</p>
+                  <p className="text-text-muted">Our undisputed ultimate creation. When you can&apos;t decide, we combine paneer, aloo, and gobhi into one massive, explosive filling. Highly recommended for the hungriest foodies.</p>
                 </div>
               </div>
             </div>
@@ -181,7 +180,7 @@ export default function BestChurChurNaanPage() {
             <div className="text-center mt-10 border-y border-gray-200 py-10">
               <h3 className="text-2xl font-bold text-text-dark mb-4">Craving the Ultimate Crunch?</h3>
               <p className="text-text-muted mb-8 max-w-2xl mx-auto">
-                No knife and fork required. The only acceptable way to eat our Chur Chur Naan is with your bare hands, ripping off buttery, layered flakes and dunking them directly into our silky Dal Makhani. We guarantee you'll be back for more.
+                No knife and fork required. The only acceptable way to eat our Chur Chur Naan is with your bare hands, ripping off buttery, layered flakes and dunking them directly into our silky Dal Makhani. We guarantee you&apos;ll be back for more. Or, if you want to switch things up, you can <Link href="/best-chole-kulcha-combo-lucknow" className="text-primary font-bold hover:underline">Explore our Chole Kulcha Combos too</Link>.
               </p>
               <Link
                 href="/menu"

@@ -2,6 +2,7 @@
 
 import { Star, Plus } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 interface DishProps {
     id: string;
@@ -12,6 +13,7 @@ interface DishProps {
     image: string;
     isVeg?: boolean;
     onAdd?: () => void;
+    link?: { href: string; text: string };
 }
 
 export default function DishCard({
@@ -22,6 +24,7 @@ export default function DishCard({
     image,
     isVeg = true,
     onAdd,
+    link,
 }: DishProps) {
     return (
         <motion.div
@@ -55,7 +58,14 @@ export default function DishCard({
 
             <div className="p-4 flex-1 flex flex-col">
                 <h3 className="font-bold text-xl text-text-dark mb-1">{name}</h3>
-                <p className="text-sm text-text-muted line-clamp-2 mb-4 flex-1">{description}</p>
+                <p className="text-sm text-text-muted line-clamp-2 mb-2 flex-1">{description}</p>
+                {link && (
+                    <div className="mb-3">
+                        <Link href={link.href} className="text-sm font-semibold text-primary hover:underline">
+                            {link.text}
+                        </Link>
+                    </div>
+                )}
 
                 <div className="flex items-center justify-between mt-auto">
                     <span className="text-xl font-bold text-primary">₹{price}</span>

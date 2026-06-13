@@ -191,7 +191,7 @@ export default function BestRajmaChawalLucknow() {
           {/* ── Hero Header ─────────────────────────────────────────────── */}
           <div className="mb-10 text-center">
             <span className="text-primary font-bold tracking-widest uppercase text-sm mb-2 block">
-              Lucknow's Most Loved Comfort Meal
+              Lucknow&apos;s Most Loved Comfort Meal
             </span>
             <h1 className="text-4xl md:text-5xl font-extrabold text-text-dark mb-6 leading-tight">
               Best Rajma Chawal in Lucknow

@@ -76,6 +76,7 @@ const menuItems = [
         price: 260,
         image: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Aloo%20Chur%20Chur%20Kulcha.jpg?raw=true",
         rating: 4.8,
+        link: { href: "/best-chole-kulcha-combo-lucknow", text: "Try our Chole Kulcha Combo" },
     },
     {
         id: "7",
@@ -85,6 +86,7 @@ const menuItems = [
         price: 260,
         image: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Aloo%20Pyaz%20Chur%20Chur%20Kulcha%20(1%20pc).jpg?raw=true",
         rating: 4.9,
+        link: { href: "/best-chole-kulcha-combo-lucknow", text: "Try our Chole Kulcha Combo" },
     },
     {
         id: "8",
@@ -94,6 +96,7 @@ const menuItems = [
         price: 260,
         image: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Paneer%20Chur%20Chur%20Kulcha.jpg?raw=true",
         rating: 5.0,
+        link: { href: "/best-chole-kulcha-combo-lucknow", text: "Try our Chole Kulcha Combo" },
     },
     {
         id: "9",
@@ -103,6 +106,7 @@ const menuItems = [
         price: 260,
         image: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Paneer%20Pyaz%20Chur%20Chur%20Kulcha%20(1%20pc).jpg?raw=true",
         rating: 4.9,
+        link: { href: "/best-chole-kulcha-combo-lucknow", text: "Try our Chole Kulcha Combo" },
     },
     {
         id: "10",
@@ -112,6 +116,7 @@ const menuItems = [
         price: 260,
         image: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Gobhi%20Chur%20Chur%20Kulcha.jpg?raw=true",
         rating: 4.7,
+        link: { href: "/best-chole-kulcha-combo-lucknow", text: "Try our Chole Kulcha Combo" },
     },
     {
         id: "11",
@@ -121,6 +126,7 @@ const menuItems = [
         price: 260,
         image: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Gobhi%20Pyaz%20Chur%20Chur%20Kulcha%20(1%20Pc).jpg?raw=true",
         rating: 4.8,
+        link: { href: "/best-chole-kulcha-combo-lucknow", text: "Try our Chole Kulcha Combo" },
     },
 
     // ================= CHUR CHUR NAAN =================
@@ -132,6 +138,7 @@ const menuItems = [
         price: 280,
         image: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Aloo%20Chur%20Chur%20Naan%20(1).jpg?raw=true",
         rating: 4.9,
+        link: { href: "/best-chole-kulcha-combo-lucknow", text: "Try our Chole Kulcha Combo" },
     },
     {
         id: "13",
@@ -141,6 +148,7 @@ const menuItems = [
         price: 280,
         image: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Aloo%20Pyaz%20Chur%20Chur%20Naan.jpg?raw=true",
         rating: 4.8,
+        link: { href: "/best-chole-kulcha-combo-lucknow", text: "Try our Chole Kulcha Combo" },
     },
     {
         id: "14",
@@ -150,6 +158,7 @@ const menuItems = [
         price: 280,
         image: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Paneer%20Chur%20Chur%20Naan.jpg?raw=true",
         rating: 5.0,
+        link: { href: "/best-chole-kulcha-combo-lucknow", text: "Try our Chole Kulcha Combo" },
     },
     {
         id: "15",
@@ -159,6 +168,7 @@ const menuItems = [
         price: 280,
         image: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Paneer%20Pyaz%20Chur%20Chur%20Naan.jpg?raw=true",
         rating: 4.9,
+        link: { href: "/best-chole-kulcha-combo-lucknow", text: "Try our Chole Kulcha Combo" },
     },
     {
         id: "16",
@@ -168,6 +178,7 @@ const menuItems = [
         price: 280,
         image: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Mix%20Chur%20Chur%20Naan.jpg?raw=true",
         rating: 4.9,
+        link: { href: "/best-chole-kulcha-combo-lucknow", text: "Try our Chole Kulcha Combo" },
     },
     {
         id: "17",
@@ -177,6 +188,7 @@ const menuItems = [
         price: 280,
         image: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Gobhi%20Chur%20Chur%20Naan.jpg?raw=true",
         rating: 4.7,
+        link: { href: "/best-chole-kulcha-combo-lucknow", text: "Try our Chole Kulcha Combo" },
     },
 
     // ================= BREADS =================
@@ -260,6 +272,7 @@ const menuItems = [
         price: 60,
         image: "https://github.com/AkchhatAwasthi/chetramimages/blob/main/Laccha%20Paratha%20(1%20Pc).jpg?raw=true",
         rating: 4.8,
+        link: { href: "/best-chole-kulcha-combo-lucknow", text: "Try our Chole Kulcha Combo" },
     },
 
     // ================= RICE =================
