@@ -1,8 +1,14 @@
 "use client";
 
+import { useState } from "react";
 import { Star, Plus } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+
+interface PriceVariant {
+    label: string;
+    price: number;
+}
 
 interface DishProps {
     id: string;
@@ -14,6 +20,8 @@ interface DishProps {
     isVeg?: boolean;
     onAdd?: () => void;
     link?: { href: string; text: string };
+    variants?: PriceVariant[];
+    portion?: string;
 }
 
 export default function DishCard({
@@ -25,7 +33,13 @@ export default function DishCard({
     isVeg = true,
     onAdd,
     link,
+    variants,
+    portion,
 }: DishProps) {
+    const [selectedVariantIndex, setSelectedVariantIndex] = useState(0);
+    const activeVariant = variants && variants.length > 0 ? variants[selectedVariantIndex] : null;
+    const currentPrice = activeVariant ? activeVariant.price : price;
+
     return (
         <motion.div
             whileHover={{ y: -5 }}
@@ -67,11 +81,41 @@ export default function DishCard({
                     </div>
                 )}
 
-                <div className="flex items-center justify-between mt-auto">
-                    <span className="text-xl font-bold text-primary">₹{price}</span>
+                {/* Per Pcs / Variant Selector */}
+                {variants && variants.length > 0 && (
+                    <div className="flex flex-wrap items-center gap-1.5 mb-3 pt-1">
+                        {variants.map((v, i) => {
+                            const isSelected = selectedVariantIndex === i;
+                            return (
+                                <button
+                                    key={v.label}
+                                    type="button"
+                                    onClick={() => setSelectedVariantIndex(i)}
+                                    className={`text-xs font-semibold px-2.5 py-1 rounded-full border transition-all duration-200 ${
+                                        isSelected
+                                            ? "bg-primary text-white border-primary shadow-sm"
+                                            : "bg-background text-text-muted border-accent/40 hover:border-primary/40 hover:text-text-dark"
+                                    }`}
+                                >
+                                    {v.label} · ₹{v.price}
+                                </button>
+                            );
+                        })}
+                    </div>
+                )}
+
+                <div className="flex items-center justify-between mt-auto pt-2 border-t border-accent/15">
+                    <div className="flex items-baseline gap-1.5">
+                        <span className="text-2xl font-extrabold text-primary">₹{currentPrice}</span>
+                        {activeVariant ? (
+                            <span className="text-xs font-medium text-text-muted">/ {activeVariant.label}</span>
+                        ) : portion ? (
+                            <span className="text-xs font-medium text-text-muted">/ {portion}</span>
+                        ) : null}
+                    </div>
                     <button
                         onClick={onAdd}
-                        className="w-10 h-10 rounded-full bg-primary hover:bg-primary-dark text-white flex items-center justify-center transition-colors"
+                        className="w-10 h-10 rounded-full bg-primary hover:bg-primary-dark text-white flex items-center justify-center transition-colors shadow-sm"
                         aria-label="Add to cart"
                     >
                         <Plus size={20} />
